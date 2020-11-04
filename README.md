@@ -40,8 +40,9 @@
 GitHub: <a href="https://github.com/kikilgm">lgm</a>
 </li>
 <li>
-简书: <a href="#"> 简书</a>
+ 简书: <a href="#"> 简书</a>
 </li>
+ 邮箱: <a href="kikilgm@qq.com"> 简书</a>
 <li>
 </li>
 <li>
