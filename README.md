@@ -3,7 +3,7 @@
 <div>
 <h3>近期更新</h3>
 <ul>
-<li><a href="https://github.com/NJHu/swiftProject">swiftProject组件化</a></li>
+<li><a href="https://github.com/kikilgm/LgmProject">IOS综合训练</a></li>
 <li>RSA 加密解密</li>
 <li>iOS UniversalLink 通用链接 Demo(任意浏览器和WebView打开App)</li>
 </ul>
@@ -37,16 +37,14 @@
 <tr>
 <td>
 <li>
-GitHub: <a href="https://github.com/njhu">NJHu</a>
+GitHub: <a href="https://github.com/kikilgm">lgm</a>
 </li>
 <li>
-简书: <a href="https://www.jianshu.com/u/dbc8e7afeb3d">NJHu 简书</a>
+简书: <a href="#"> 简书</a>
 </li>
 <li>
-Blog: <a href="https://www.weibo.com/njhu">NJHu 微博</a>
 </li>
 <li>
-Email: <a href="mailto:64hp@163.com">64hp@163.com</a>
 </li>
 </td>
 </tr>
