@@ -1,0 +1,10 @@
+*~
+.DS_Store
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+xcuserdata
+*.lock
+Pods
+.gitignore
+callkit-ios-master
