@@ -334,6 +334,7 @@
 		58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */ = {isa = PBXBuildFile; fileRef = 58E02EED209D8BA4005431BA /* LMJUniversalLink.html */; };
 		FB297E31255250EF006E297C /* LMSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB297E30255250EF006E297C /* LMSegmentViewController.m */; };
 		FB82E5972552584900B8AF80 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB82E5952552584800B8AF80 /* YJSegmentedControl.m */; };
+		FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB96E4662553C14900F72CF9 /* LMCentreController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -942,6 +943,8 @@
 		FB297E30255250EF006E297C /* LMSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSegmentViewController.m; sourceTree = "<group>"; };
 		FB82E5952552584800B8AF80 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
 		FB82E5962552584900B8AF80 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
+		FB96E4652553C14900F72CF9 /* LMCentreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCentreController.h; sourceTree = "<group>"; };
+		FB96E4662553C14900F72CF9 /* LMCentreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCentreController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1150,6 +1153,8 @@
 				584038811FF9F2F0002A0566 /* LMJAlertViewsViewController.m */,
 				584038851FF9F602002A0566 /* LMJFillTableFormViewController.h */,
 				584038841FF9F602002A0566 /* LMJFillTableFormViewController.m */,
+				FB96E4652553C14900F72CF9 /* LMCentreController.h */,
+				FB96E4662553C14900F72CF9 /* LMCentreController.m */,
 			);
 			path = Preview2;
 			sourceTree = "<group>";
@@ -2586,6 +2591,7 @@
 				589B57071FFFC53000B2D5A8 /* QQLrcDataTool.m in Sources */,
 				58651AA41FFE6D6F0087419D /* SINProfileViewController.m in Sources */,
 				58651AA81FFE6D6F0087419D /* SINMessageViewController.m in Sources */,
+				FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */,
 				58DC85041FFC972C0060DC03 /* BSJRecommendViewController.m in Sources */,
 				589B56FE1FFFC52F00B2D5A8 /* QQMusicModel.m in Sources */,
 				58DC81891FFA317B0060DC03 /* LMJExpandImageView.m in Sources */,
