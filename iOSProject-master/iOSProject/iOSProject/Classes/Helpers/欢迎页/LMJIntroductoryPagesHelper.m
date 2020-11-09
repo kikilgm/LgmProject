@@ -34,6 +34,8 @@ static LMJIntroductoryPagesHelper *shareInstance_ = nil;
 {
     if (![LMJIntroductoryPagesHelper shareInstance].curIntroductoryPagesView) {
         [LMJIntroductoryPagesHelper shareInstance].curIntroductoryPagesView = [LMJIntroductoryPagesView pagesViewWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) images:imageArray];
+        
+        [LMJIntroductoryPagesHelper shareInstance].curIntroductoryPagesView.backgroundColor=[UIColor orangeColor];
     }
     
     [LMJIntroductoryPagesHelper shareInstance].curWindow = [UIApplication sharedApplication].keyWindow;

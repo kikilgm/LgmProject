@@ -333,8 +333,10 @@
 		58E02EEB209D8A23005431BA /* LMJUniversalLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E02EEA209D8A23005431BA /* LMJUniversalLinkViewController.m */; };
 		58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */ = {isa = PBXBuildFile; fileRef = 58E02EED209D8BA4005431BA /* LMJUniversalLink.html */; };
 		FB297E31255250EF006E297C /* LMSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB297E30255250EF006E297C /* LMSegmentViewController.m */; };
+		FB3CFB652554E8E60025C16C /* SIMAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */; };
 		FB82E5972552584900B8AF80 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB82E5952552584800B8AF80 /* YJSegmentedControl.m */; };
 		FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB96E4662553C14900F72CF9 /* LMCentreController.m */; };
+		FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -941,10 +943,14 @@
 		AA64D526EE098D357A7E6B09 /* Pods-iOSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProject/Pods-iOSProject.release.xcconfig"; sourceTree = "<group>"; };
 		FB297E2F255250EF006E297C /* LMSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSegmentViewController.h; sourceTree = "<group>"; };
 		FB297E30255250EF006E297C /* LMSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSegmentViewController.m; sourceTree = "<group>"; };
+		FB3CFB632554E8E60025C16C /* SIMAvatarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMAvatarTableViewCell.h; sourceTree = "<group>"; };
+		FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMAvatarTableViewCell.m; sourceTree = "<group>"; };
 		FB82E5952552584800B8AF80 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
 		FB82E5962552584900B8AF80 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
 		FB96E4652553C14900F72CF9 /* LMCentreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCentreController.h; sourceTree = "<group>"; };
 		FB96E4662553C14900F72CF9 /* LMCentreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCentreController.m; sourceTree = "<group>"; };
+		FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMBaseCommonTableViewCell.m; sourceTree = "<group>"; };
+		FB9C90CD25552E8000342EDD /* SIMBaseCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMBaseCommonTableViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1178,6 +1184,10 @@
 		584038521FF872BE002A0566 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FB9C90CD25552E8000342EDD /* SIMBaseCommonTableViewCell.h */,
+				FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */,
+				FB3CFB632554E8E60025C16C /* SIMAvatarTableViewCell.h */,
+				FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */,
 				584038591FF873A7002A0566 /* LMJAnnotationCustomPopView.h */,
 				5840385B1FF873A8002A0566 /* LMJAnnotationCustomPopView.m */,
 				5840385A1FF873A7002A0566 /* LMJAnnotationCustomPopView.xib */,
@@ -2486,6 +2496,7 @@
 				58651ABD1FFE6D6F0087419D /* SINStatusListService.m in Sources */,
 				58651AA91FFE6D6F0087419D /* SINBroswerViewController.m in Sources */,
 				5822334520185F790008251F /* MCSphereTagCloudViewController.m in Sources */,
+				FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */,
 				588CCD8B205DF92F0067E3C4 /* LMJCircleLayout.m in Sources */,
 				58DC83D11FFB43E30060DC03 /* LMJClipImageViewController.m in Sources */,
 				589B56F91FFFC52F00B2D5A8 /* MUSLrcTableViewController.m in Sources */,
@@ -2640,6 +2651,7 @@
 				58DC83D91FFB440E0060DC03 /* WPFDemoController.m in Sources */,
 				58DC843F1FFBD1290060DC03 /* LMJGCDViewController.m in Sources */,
 				58DC85291FFC972C0060DC03 /* BSJTopicCmtService.m in Sources */,
+				FB3CFB652554E8E60025C16C /* SIMAvatarTableViewCell.m in Sources */,
 				58651AA71FFE6D6F0087419D /* SINTabBarController.m in Sources */,
 				58DC83CD1FFB43E30060DC03 /* LMJShangXiaWenZhanViewController.m in Sources */,
 				58A858A6207C934E0063DE98 /* PresentAnimator.m in Sources */,

@@ -106,6 +106,12 @@
     return _scrollView;
 }
 
+
+
+
+
+
+
 - (UIPageControl *)pageControl
 {
     if(!_pageControl)
@@ -119,6 +125,11 @@
     }
     return _pageControl;
 }
+
+
+
+
+
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
