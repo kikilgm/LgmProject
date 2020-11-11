@@ -25,15 +25,10 @@
 @implementation LMCentreController
 
 
-
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [_tableView  reloadData];
 }
-
-
-
-
 
 
 - (void)viewDidLoad {
@@ -41,8 +36,6 @@
     // Do any additional setup after loading the view.
     [self initView];
 }
-
-
 
 
 
@@ -67,7 +60,7 @@
 //    }
     
     
-
+    
     _tableView=[[UITableView alloc]init];
     _tableView.backgroundColor=[UIColor grayColor];
     _tableView.backgroundColor=[UIColor colorWithHexString:@"#e4e4e4"];
@@ -86,8 +79,6 @@
     [self prepareCells];
 
 }
-
-
 
 
 
@@ -115,9 +106,6 @@
 
 
 
-
-
-
 #pragma mark - TableView
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -135,8 +123,6 @@
 {
     return CGFLOAT_MIN;
 }
-
-
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
