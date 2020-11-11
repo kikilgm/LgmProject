@@ -1,0 +1,186 @@
+//
+//  NJiOSProject.pch
+//  iOSProject
+//
+//  Created by HuXuPeng on 2017/12/28.
+//  Copyright © 2017年 HuXuPeng. All rights reserved.
+//
+
+#ifndef NJiOSProject_pch
+#define NJiOSProject_pch
+
+// category
+#import "UIView+LMJNjHuFrame.h"
+#import "MBProgressHUD+LMJ.h"
+#import "UIView+GestureCallback.h"
+#import "UIColor+Random.h"
+#import "UIButton+LMJ.h"
+//#import "UITextView+WZB.h"
+//#import "NSDecimalNumber+Addtion.h"
+
+// helpers
+#import "LMJConst.h"
+#import "LMJRequestManager.h"
+#import "JXTAlertController.h"
+#import "LMJEasyBlankPageView.h"
+#import "UIImageView+FitNet.h"
+#import "MJDownload.h"
+
+
+// libs
+//#import <AFNetworking.h>
+#import <IQKeyboardManager.h>
+#import <Masonry.h>
+//#import <MBProgressHUD.h>
+#import <MJExtension.h>
+//#import <MJRefresh.h>
+//#import <SDCycleScrollView.h>
+#import <UIImageView+WebCache.h>
+//#import <YYAsyncLayer.h>
+#import <YYCategories.h>
+//#import <YYImage.h>
+#import <YYText.h>
+#import <Toast.h>
+
+//弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
+
+#define LMJWeak(type)  __weak typeof(type) weak##type = type
+
+/**
+ *  属性转字符串
+ */
+#define LMJKeyPath(obj, key) @(((void)obj.key, #key))
+
+
+//是否是空对象
+#define LMJIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+//不同屏幕尺寸字体适配
+#define kScreenWidthRatio  (UIScreen.mainScreen.bounds.size.width / 375.0)
+#define kScreenHeightRatio (UIScreen.mainScreen.bounds.size.height / 667.0)
+#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
+#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
+
+//由角度转换弧度
+#define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
+//由弧度转换角度
+#define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
+
+#ifdef DEBUG
+
+#define NSLogFunc NSLog(@"=====Begin==========\n FILE: %@\n FUNC: %s\n LINE: %d\n", [NSString stringWithUTF8String:__FILE__].lastPathComponent, __PRETTY_FUNCTION__, __LINE__)
+
+#else
+
+#define NSLogFunc
+
+#endif
+
+#endif /* NJiOSProject_pch */
+
+
+
+
+#define EnableLog YES
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define RGB(r, g, b)                        [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define rgba(r, g, b, a)                    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define HEXCOLOR(c)                         [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
+// RGB颜色转换（16进制->10进制）
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+/**
+ *颜色值 十六进制转换成uicolor
+ */
+#define ZJYColorHex(hexValue) [UIColor colorWithHexString:hexValue]
+// 3.是否为4inch
+#define fourInch ([UIScreen mainScreen].bounds.size.height == 568)
+
+#define kMaxLength 32
+#define kMinLength 20
+
+// 4.屏幕大小尺寸
+#define screen_width [UIScreen mainScreen].bounds.size.width
+#define screen_height [UIScreen mainScreen].bounds.size.height
+
+
+// 比例适配
+#define kWidthScale(value) [UIScreen mainScreen].bounds.size.width/375*value
+#define kHeightScale(value) [UIScreen mainScreen].bounds.size.width/667*value
+
+// 比例适配 ipad
+#define IS_IPAD     [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad
+#define kWS(value) (([UIScreen mainScreen].bounds.size.width-200)/375*value)
+#define kWidthS(value) IS_IPAD ? (value) :([UIScreen mainScreen].bounds.size.width/375*value)
+
+
+//重新设定view的Y值
+#define setFrameY(view, newY) view.frame = CGRectMake(view.frame.origin.x, newY, view.frame.size.width, view.frame.size.height)
+#define setFrameX(view, newX) view.frame = CGRectMake(newX, view.frame.origin.y, view.frame.size.width, view.frame.size.height)
+#define setFrameH(view, newH) view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, newH)
+#define setFrameW(view, newW) view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, newW, view.frame.size.height)
+
+//取view的坐标及长宽
+#define W(view)    view.frame.size.width
+#define H(view)    view.frame.size.height
+#define X(view)    view.frame.origin.x
+#define Y(view)    view.frame.origin.y
+//字符串
+#define FtoS(floatNum) [NSString stringWithFormat:@"%f",floatNum]
+#define FontAttribute(color,fontSize) [NSDictionary dictionaryWithObjectsAndKeys:color, NSForegroundColorAttributeName,[mainFont fontWithSize:fontSize], NSFontAttributeName,nil]
+
+#define StringFontAttribute(fontSize) [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName,[[UIFont preferredFontForTextStyle:UIFontTextStyleBody] fontWithSize:fontSize], NSFontAttributeName,nil]
+/**
+ *  项目相关
+ */
+#define BlueButtonColor  ZJYColorHex(@"#2d8cff")//蓝主色
+//#define BlueColor RGB(52,143,251)
+#define DarkBlackNavBarColor ZJYColorHex(@"#464646") // 导航色
+#define HightLightButtonColor ZJYColorHex(@"#778899")// 点击按钮变得色
+#define DarkBlackNavBarFontColor RGB(52,52,52)
+#define TableViewBackgroundColor ZJYColorHex(@"#FAFAFA")
+#define LightBlueButtonColor RGB(61,183,252)
+#define GrayPromptTextColor ZJYColorHex(@"#999999")// cell上detail颜色文字
+#define WhiteNaviTabSelectedColor RGB(207,207,226)
+#define TableViewHeaderColor ZJYColorHex(@"#666666")// 页眉颜色文字
+#define BlackTextColor ZJYColorHex(@"#333333")// cell主文字颜色
+#define SearchBackColor ZJYColorHex(@"#EEEEEE")// 搜索框背景颜色
+
+
+#define FontRegularName(fontSize) [UIFont fontWithName:@"PingFangSC-Regular" size:fontSize];
+#define FontMediumName(fontSize) [UIFont fontWithName:@"PingFangSC-Regular" size:fontSize];
+
+
+
+#define ScreenWidth      CGRectGetWidth([UIScreen mainScreen].bounds)
+#define ScreenHeight      CGRectGetHeight([UIScreen mainScreen].bounds)
+
+#define GMX  (ScreenWidth/375.0)
+#define GMH  (ScreenHeight/667.0)
+
+#define PADX (ScreenWidth/384.0)
+#define PADH (ScreenWidth/512.0)
+
+
+
+
+#define referenceW 375.0
+#define referenceH 667.0
+#define LZYFitX (ScreenWidth / referenceW)
+#define LZYFitY (ScreenHeight / referenceH)
+#define LZYFitFontS(fontSize) (fontSize * LZYFitX)
+
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
+
+#define lzytejiaTopMargin 0.0
+#define lzytagViewHeight (32.0 * LZYFitY)
+
+
+
+
+
+
