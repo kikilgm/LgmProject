@@ -78,7 +78,6 @@
         [btn addTarget:self action:@selector(show:) forControlEvents:UIControlEventTouchUpInside];
     }
     
-    
     [btnM mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:20 leadSpacing:10 tailSpacing:10];
     
     
@@ -88,6 +87,9 @@
         make.height.mas_equalTo(44);
         
     }];
+    
+    
+    
     
 }
 
@@ -130,6 +132,9 @@
 }
 
 
+
+
+
 - (void)masonryLabels2
 {
     
@@ -150,11 +155,13 @@
     
     [self.view addSubview:mySenondLabel];
     
+    
     [myLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.mas_equalTo(190);
         make.left.mas_equalTo(10);
     }];
+    
     
     [mySenondLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -166,7 +173,10 @@
         
     }];
     
+    
 }
+
+
 
 
 
@@ -387,6 +397,11 @@
     }];
     
 }
+
+
+
+
+
 
 #pragma mark - LMJNavUIBaseViewControllerDataSource
 
