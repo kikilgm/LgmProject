@@ -24,8 +24,6 @@
 
 
 
-
-
 #pragma mark - LMJNavUIBaseViewControllerDataSource
 
 /** 导航条左边的按钮 */
@@ -35,12 +33,6 @@
     
     return [UIImage imageNamed:@"NavgationBar_blue_back"];
 }
-
-
-
-
-
-
 
 #pragma mark - LMJNavUIBaseViewControllerDelegate
 /** 左边的按钮的点击 */
@@ -52,12 +44,10 @@
 
 
 
-
--(void)createUISegmentedControl{
+- (void)createUISegmentedControl{
     // **********************  样式1 *******************************
     //  第3步  创建需要的选择器
     NSArray * btnDataSource = @[@"未付款", @"已付款", @"待收货"];
-    
     
     
     
@@ -67,24 +57,16 @@
     [self.view addSubview:segment];
     
     [segment mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@86);
+        make.top.equalTo(@64);
         make.width.equalTo(self.view);
         make.height.equalTo(@44);
         
     }];
     
     
-    
-    
-    
-    
-    
     /************************* 样式2 ***************************
      *  样式2
      */
-    
-    
-
     
     
     NSArray * btnDataSource2 = @[@"未付款", @"已付款", @"待发货", @"待收货"];
@@ -93,11 +75,10 @@
     
     
     
-    
-    
     /************************* 样式3 ***************************
      *  样式2
      */
+    
     
     NSArray * btnDataSource3 = @[@"未付款", @"已付款", @"待发货", @"待收货", @"退款"];
     YJSegmentedControl * segment3 = [YJSegmentedControl segmentedControlFrame:CGRectMake(0, CGRectGetMaxY(segment2.frame) + 100, self.view.bounds.size.width, 44) titleDataSource:btnDataSource3 backgroundColor:[UIColor whiteColor] titleColor:[UIColor grayColor] titleFont:[UIFont fontWithName:@".Helvetica Neue Interface" size:16.0f] selectColor:[UIColor orangeColor] buttonDownColor:[UIColor redColor] Delegate:self];
@@ -110,17 +91,14 @@
 
 
 
-
-
-
 #pragma mark -- 遵守代理 实现代理方法
 - (void)segumentSelectionChange:(NSInteger)selection{
     if (selection == 0) {
-         NSLog(@"未付款");
+        NSLog(@"未付款");
     }else if (selection == 1){
-         NSLog(@"已付款");
+    NSLog(@"已付款");
     }else{
-         NSLog(@"待发货");
+    NSLog(@"待发货");
     }
 
 }
