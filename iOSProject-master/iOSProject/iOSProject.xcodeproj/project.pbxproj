@@ -334,7 +334,6 @@
 		58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */ = {isa = PBXBuildFile; fileRef = 58E02EED209D8BA4005431BA /* LMJUniversalLink.html */; };
 		FB297E31255250EF006E297C /* LMSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB297E30255250EF006E297C /* LMSegmentViewController.m */; };
 		FB3CFB652554E8E60025C16C /* SIMAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */; };
-		FB6179E9255B8F0400678926 /* GMLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6179E8255B8F0400678926 /* GMLiveController.m */; };
 		FB82E5972552584900B8AF80 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB82E5952552584800B8AF80 /* YJSegmentedControl.m */; };
 		FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB96E4662553C14900F72CF9 /* LMCentreController.m */; };
 		FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */; };
@@ -946,8 +945,6 @@
 		FB297E30255250EF006E297C /* LMSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSegmentViewController.m; sourceTree = "<group>"; };
 		FB3CFB632554E8E60025C16C /* SIMAvatarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMAvatarTableViewCell.h; sourceTree = "<group>"; };
 		FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMAvatarTableViewCell.m; sourceTree = "<group>"; };
-		FB6179E7255B8F0400678926 /* GMLiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMLiveController.h; sourceTree = "<group>"; };
-		FB6179E8255B8F0400678926 /* GMLiveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMLiveController.m; sourceTree = "<group>"; };
 		FB82E5952552584800B8AF80 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
 		FB82E5962552584900B8AF80 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
 		FB96E4652553C14900F72CF9 /* LMCentreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCentreController.h; sourceTree = "<group>"; };
@@ -1335,7 +1332,6 @@
 		58651ABF1FFE6F3F0087419D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FB6179E1255B8E7400678926 /* 视频直播 */,
 				584038431FF7F3DC002A0566 /* Network */,
 				5892AD601FF5088D00E868C2 /* Category */,
 				5892AD611FF5088D00E868C2 /* Helpers */,
@@ -2230,39 +2226,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FB6179E1255B8E7400678926 /* 视频直播 */ = {
-			isa = PBXGroup;
-			children = (
-				FB6179E6255B8ED200678926 /* Controller */,
-				FB6179E3255B8E9700678926 /* Model */,
-				FB6179E2255B8E8D00678926 /* View */,
-			);
-			path = "视频直播";
-			sourceTree = "<group>";
-		};
-		FB6179E2255B8E8D00678926 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FB6179E3255B8E9700678926 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FB6179E6255B8ED200678926 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				FB6179E7255B8F0400678926 /* GMLiveController.h */,
-				FB6179E8255B8F0400678926 /* GMLiveController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2482,7 +2445,6 @@
 				58DC850B1FFC972C0060DC03 /* BSJUser.m in Sources */,
 				58DC852A1FFC972C0060DC03 /* BSJRecommendSevice.m in Sources */,
 				5892AD751FF5114A00E868C2 /* LMJMessageViewController.m in Sources */,
-				FB6179E9255B8F0400678926 /* GMLiveController.m in Sources */,
 				FB297E31255250EF006E297C /* LMSegmentViewController.m in Sources */,
 				5822332020182C5D0008251F /* MCCornersRoundViewController.m in Sources */,
 				5892AD031FF4F9D200E868C2 /* LMJElementsFlowLayout.m in Sources */,
