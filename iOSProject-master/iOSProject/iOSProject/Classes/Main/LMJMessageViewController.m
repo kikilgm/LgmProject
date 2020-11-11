@@ -13,11 +13,13 @@
 #import "MUSHomeListViewController.h"
 #import "SINUserManager.h"
 #import "UIView+GestureCallback.h"
+#import "GMLiveController.h"
 
 @interface LMJMessageViewController ()
 /** <#digest#> */
 @property (strong, nonatomic) UILabel *backBtn;
 @end
+
 
 @implementation LMJMessageViewController
 
@@ -37,27 +39,60 @@
         [weakself presentViewController:[[BSJTabBarController alloc] init] animated:YES completion:nil];
     }];
     
+    
+    
+    
+    
+    
+    
+
     LMJWordItem *item1 = [LMJWordItem itemWithTitle:@"模仿微博App" subTitle: @"NJSina"];
     [item1 setItemOperation:^(NSIndexPath *indexPath){
         [weakself presentViewController:[[SINTabBarController alloc] init] animated:YES completion:nil];
     }];
     
-    //    LMJWordItem *item2 = [LMJWordItem itemWithTitle:@"IM_HX" subTitle: @"环信聊天"];
-    //    [item2 setItemOperation:^(NSIndexPath *indexPath){
-    //        [weakself presentViewController:[[IMHTabBarController alloc] init] animated:YES completion:nil];
-    //    }];
+    
+    
+    
+    
+    //LMJWordItem *item2 = [LMJWordItem itemWithTitle:@"IM_HX" subTitle: @"环信聊天"];
+    //[item2 setItemOperation:^(NSIndexPath *indexPath){
+    //    [weakself presentViewController:[[IMHTabBarController alloc] init] animated:YES completion:nil];
+    //}];
+    
+    
+    
     
     LMJWordItem *item3 = [LMJWordItem itemWithTitle:@"音乐音频播放" subTitle: @"Music"];
     [item3 setItemOperation:^(NSIndexPath *indexPath){
         [weakself presentViewController:[[LMJNavigationController alloc] initWithRootViewController:[[MUSHomeListViewController alloc] init]] animated:YES completion:nil];
     }];
     
+    
+    
+    
     LMJWordItem *item4 = [LMJWordItem itemWithTitle:@"列表视频" subTitle: @"Video"];
     [item4 setItemOperation:^(NSIndexPath *indexPath){
         [weakself presentViewController:[[UIStoryboard storyboardWithName:@"VideoDemo" bundle:[NSBundle mainBundle]] instantiateInitialViewController] animated:YES completion:nil];
     }];
     
-    LMJItemSection *section0 = [LMJItemSection sectionWithItems:@[item0, item1, item3, item4] andHeaderTitle:nil footerTitle:nil];
+
+    
+    
+    
+
+    LMJWordItem *item5 = [LMJWordItem itemWithTitle:@"视频直播" subTitle: @"live"];
+    [item5 setItemOperation:^(NSIndexPath *indexPath) {
+//        [weakself.navigationController pushViewController: animated:(BOOL)]
+        
+        [weakself presentViewController:[[LMJNavigationController alloc] initWithRootViewController:[[GMLiveController alloc] init]] animated:YES completion:nil];
+         NSLog(@"跳转到视频直播");
+    }];
+
+    
+
+    
+    LMJItemSection *section0 = [LMJItemSection sectionWithItems:@[item0, item1, item3, item4,item5] andHeaderTitle:nil footerTitle:nil];
     
     [self.sections addObject:section0];
     
@@ -66,6 +101,8 @@
         if (LMJIsEmpty(response.responseObject) || ![response.responseObject isKindOfClass:[NSDictionary class]]) {
             return ;
         }
+        
+        
         // 作者的微博开放号
         if ([LMJThirdSDKSinaAppKey isEqualToString:@"4061770881"]) {
             SINUserManager.sharedManager.accessToken = response.responseObject[@"accessToken"];
@@ -73,16 +110,37 @@
     }];
 }
 
+
+
+
+
+
+
+
+
+
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.backBtn.hidden = !self.presentedViewController;
 }
+
+
+
+
+
+
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     self.backBtn.hidden = !self.presentedViewController;
     [[UIApplication sharedApplication].keyWindow addSubview:self.backBtn];
 }
+
+
+
+
+
 
 - (UILabel *)backBtn
 {
