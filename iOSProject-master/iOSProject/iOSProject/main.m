@@ -24,8 +24,6 @@ int main(int argc, char * argv[]) {
 
 
 
-
-
 // 设置一个C函数，用来接收崩溃信息
 void UncaughtExceptionHandler(NSException *exception) {
     // 可以通过exception对象获取一些崩溃信息，我们就是通过这些崩溃信息来进行解析的，例如下面的symbols数组就是我们的崩溃堆栈。
