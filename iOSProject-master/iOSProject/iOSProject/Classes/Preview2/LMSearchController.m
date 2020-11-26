@@ -89,9 +89,6 @@
 
 
 
-
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // 1. Create an Array of popular search

@@ -8,6 +8,9 @@
 #import "PYSearchConst.h"
 #import "PYSearchSuggestionViewController.h"
 
+#import <objc/runtime.h>
+
+
 #define PYRectangleTagMaxCol 3
 #define PYTextColor PYSEARCH_COLOR(113, 113, 113)
 #define PYSEARCH_COLORPolRandomColor self.colorPol[arc4random_uniform((uint32_t)self.colorPol.count)]
@@ -1220,6 +1223,11 @@
     return 44.0;
 }
 
+
+
+
+
+//触发搜索的 回调函数
 #pragma mark - UISearchBarDelegate
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
@@ -1390,10 +1398,14 @@
 /** 导航栏中间那个view */
 
 - (UIView *)lmjNavigationBarTitleView:(LMJNavigationBar *)navigationBar{
-        UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0,10,300,30)];
-//    titleView.backgroundColor=[UIColor redColor];
+      UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0,10,500,30)];
+//    titleView.backgroundColor=[UIColor grayColor];
 
-        UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:titleView.bounds];
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:titleView.bounds];
+    //显示取消按钮
+//    [searchBar setShowsCancelButton:YES animated:YES];
+
+
         [titleView addSubview:searchBar];
         if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0) { // iOS 11
             [NSLayoutConstraint activateConstraints:@[
@@ -1409,22 +1421,117 @@
         searchBar.placeholder = [NSBundle py_localizedStringForKey:PYSearchSearchPlaceholderText];
         searchBar.backgroundImage = [NSBundle py_imageNamed:@"clearImage"];
         searchBar.delegate = self;
-        for (UIView *subView in [[searchBar.subviews lastObject] subviews]) {
-            if ([[subView class] isSubclassOfClass:[UITextField class]]) {
-                UITextField *textField = (UITextField *)subView;
-                textField.font = [UIFont systemFontOfSize:16];
-                _searchTextField = textField;
-                break;
-            }
-        }
-        self.searchBar = searchBar;
+    
+         //通过遍历拿到uitextfield
+//        for (UIView *subView in [[searchBar.subviews lastObject] subviews]) {
+//            if ([[subView class] isSubclassOfClass:[UITextField class]]) {
+//                UITextField *textField = (UITextField *)subView;
+//                textField.font = [UIFont systemFontOfSize:16];
+//                _searchTextField = textField;
+//                break;
+//            }
+//        }
+    
+    
+
+    
+    
+    //添加搜索按钮
+    UIButton  *searBtn = [searchBar valueForKey:@"cancelButton"];
+    searBtn.backgroundColor=[UIColor orangeColor];
+    [searBtn setTitle:@"搜索" forState:UIControlStateNormal];
+    [searBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [searBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [searBtn setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
+    [searBtn addTarget:self action:@selector(searchActiond) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    //通过kvc 拿取
+    //通过KVC拿到textField
+    UITextField  *seachTextFild = [searchBar valueForKey:@"searchField"];
+   // 拿到textField之后就可以肆意妄为了
+    seachTextFild.font = [UIFont systemFontOfSize:16];
+    _searchTextField = seachTextFild;
+    
+    
+    self.searchBar = searchBar;
     self.searchBar .placeholder=@"请输入搜索内容";
 
-
+    
     
     return titleView;
 }
 
 
 
+
+
+// 添加导航栏右侧按钮
+//- (UIView *)lmjNavigationBarRightView:(LMJNavigationBar *)navigationBar{
+//
+//    UIView *rightView=[[UIView alloc]initWithFrame:CGRectMake(0,0,50,40)];
+//    //添加搜索按钮
+//    UIButton *searBtn=[[UIButton alloc]init];
+//    [searBtn setTitleEdgeInsets:UIEdgeInsetsMake(0,0,0,0)];
+////    searBtn.backgroundColor=[UIColor orangeColor];
+//    searBtn.titleLabel.textAlignment=NSTextAlignmentLeft;
+//    [searBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+//    [searBtn setTitle:@"搜索" forState:UIControlStateNormal];
+//    [searBtn addTarget:self action:@selector(searchActiond) forControlEvents:UIControlEventTouchUpInside];
+//    [searchBar setValue:cancelButton forKeyPath:@"_cancelButton"];
+//   或者
+//   [searchBar setValue:cancelButton forKeyPath:@"cancelButton"];
+//
+//
+//    return rightView;
+//
+//}
+
+
+
+-(void)searchActiond{
+    
+    [self searchBarSearchButtonClicked:self.searchBar];
+    
+    
+}
+
 @end
+
+
+
+
+
+// 获取控件私有属性
+
+//    unsigned int outCount = 0;
+//        Ivar *ivars = class_copyIvarList([UISearchBar class], &outCount);
+//
+//        for (NSInteger i = 0; i < outCount; ++i) {
+//            // 遍历取出该类成员变量
+//            Ivar ivar = *(ivars + i);
+//
+//            NSLog(@"\n name = %s  \n type = %s", ivar_getName(ivar),ivar_getTypeEncoding(ivar));
+//        }
+//
+//        // 根据内存管理原则释放指针
+//        free(ivars);
+
+    
+    
+//
+//    unsigned int count = 0;
+//        // 返回成员属性的数组
+//        Ivar *ivars = class_copyIvarList([UIButton class], &count);
+//
+//        for (int i = 0; i < count; i++) {
+//            // 取出成员变量
+//            Ivar ivar = ivars[i];
+//
+//            // 获取属性名
+//            NSString *ivarName = @(ivar_getName(ivar));
+//
+//            NSLog(@"%@",ivarName);
+//
+//        }
+    
