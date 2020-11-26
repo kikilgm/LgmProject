@@ -334,6 +334,15 @@
 		58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */ = {isa = PBXBuildFile; fileRef = 58E02EED209D8BA4005431BA /* LMJUniversalLink.html */; };
 		FB297E31255250EF006E297C /* LMSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB297E30255250EF006E297C /* LMSegmentViewController.m */; };
 		FB3CFB652554E8E60025C16C /* SIMAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */; };
+		FB60795F256E262700F2840C /* LMSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60795E256E262700F2840C /* LMSearchController.m */; };
+		FB607963256E2CF500F2840C /* PYTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607961256E2CF500F2840C /* PYTempViewController.m */; };
+		FB607A33256E673500F2840C /* UIColor+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A26256E673500F2840C /* UIColor+PYSearchExtension.m */; };
+		FB607A34256E673500F2840C /* PYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A27256E673500F2840C /* PYSearchViewController.m */; };
+		FB607A35256E673500F2840C /* PYSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A28256E673500F2840C /* PYSearchSuggestionViewController.m */; };
+		FB607A36256E673500F2840C /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A2A256E673500F2840C /* PYSearchConst.m */; };
+		FB607A37256E673500F2840C /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB607A2B256E673500F2840C /* PYSearch.bundle */; };
+		FB607A38256E673500F2840C /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A2C256E673500F2840C /* NSBundle+PYSearchExtension.m */; };
+		FB607A39256E673500F2840C /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A32256E673500F2840C /* UIView+PYSearchExtension.m */; };
 		FB82E5972552584900B8AF80 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB82E5952552584800B8AF80 /* YJSegmentedControl.m */; };
 		FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB96E4662553C14900F72CF9 /* LMCentreController.m */; };
 		FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */; };
@@ -945,6 +954,26 @@
 		FB297E30255250EF006E297C /* LMSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSegmentViewController.m; sourceTree = "<group>"; };
 		FB3CFB632554E8E60025C16C /* SIMAvatarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMAvatarTableViewCell.h; sourceTree = "<group>"; };
 		FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMAvatarTableViewCell.m; sourceTree = "<group>"; };
+		FB60795D256E262700F2840C /* LMSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSearchController.h; sourceTree = "<group>"; };
+		FB60795E256E262700F2840C /* LMSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSearchController.m; sourceTree = "<group>"; };
+		FB607961256E2CF500F2840C /* PYTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTempViewController.m; sourceTree = "<group>"; };
+		FB607962256E2CF500F2840C /* PYTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTempViewController.h; sourceTree = "<group>"; };
+		FB607987256E655500F2840C /* PYSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
+		FB6079DD256E661B00F2840C /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
+		FB607A25256E673500F2840C /* NSBundle+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PYSearchExtension.h"; sourceTree = "<group>"; };
+		FB607A26256E673500F2840C /* UIColor+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PYSearchExtension.m"; sourceTree = "<group>"; };
+		FB607A27256E673500F2840C /* PYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchViewController.m; sourceTree = "<group>"; };
+		FB607A28256E673500F2840C /* PYSearchSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchSuggestionViewController.m; sourceTree = "<group>"; };
+		FB607A29256E673500F2840C /* UIView+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYSearchExtension.h"; sourceTree = "<group>"; };
+		FB607A2A256E673500F2840C /* PYSearchConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchConst.m; sourceTree = "<group>"; };
+		FB607A2B256E673500F2840C /* PYSearch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYSearch.bundle; sourceTree = "<group>"; };
+		FB607A2C256E673500F2840C /* NSBundle+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PYSearchExtension.m"; sourceTree = "<group>"; };
+		FB607A2D256E673500F2840C /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
+		FB607A2E256E673500F2840C /* PYSearchSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchSuggestionViewController.h; sourceTree = "<group>"; };
+		FB607A2F256E673500F2840C /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
+		FB607A30256E673500F2840C /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
+		FB607A31256E673500F2840C /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
+		FB607A32256E673500F2840C /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
 		FB82E5952552584800B8AF80 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
 		FB82E5962552584900B8AF80 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
 		FB96E4652553C14900F72CF9 /* LMCentreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCentreController.h; sourceTree = "<group>"; };
@@ -1161,6 +1190,12 @@
 				584038841FF9F602002A0566 /* LMJFillTableFormViewController.m */,
 				FB96E4652553C14900F72CF9 /* LMCentreController.h */,
 				FB96E4662553C14900F72CF9 /* LMCentreController.m */,
+				FB60795D256E262700F2840C /* LMSearchController.h */,
+				FB60795E256E262700F2840C /* LMSearchController.m */,
+				FB607962256E2CF500F2840C /* PYTempViewController.h */,
+				FB607961256E2CF500F2840C /* PYTempViewController.m */,
+				FB607987256E655500F2840C /* PYSearchViewController.h */,
+				FB6079DD256E661B00F2840C /* PYSearchViewController.h */,
 			);
 			path = Preview2;
 			sourceTree = "<group>";
@@ -1524,6 +1559,7 @@
 		5892AD611FF5088D00E868C2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FB607A24256E673500F2840C /* PYSearch */,
 				5892AD9A1FF5F04700E868C2 /* 广告页 */,
 				5892AD8A1FF5E2C000E868C2 /* 欢迎页 */,
 				583D508620765978001480C8 /* YYFPSLabel.h */,
@@ -2226,6 +2262,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB607A24256E673500F2840C /* PYSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FB607A2F256E673500F2840C /* PYSearchViewController.h */,
+				FB607A27256E673500F2840C /* PYSearchViewController.m */,
+				FB607A31256E673500F2840C /* PYSearchConst.h */,
+				FB607A2A256E673500F2840C /* PYSearchConst.m */,
+				FB607A2D256E673500F2840C /* PYSearch.h */,
+				FB607A25256E673500F2840C /* NSBundle+PYSearchExtension.h */,
+				FB607A2C256E673500F2840C /* NSBundle+PYSearchExtension.m */,
+				FB607A29256E673500F2840C /* UIView+PYSearchExtension.h */,
+				FB607A32256E673500F2840C /* UIView+PYSearchExtension.m */,
+				FB607A30256E673500F2840C /* UIColor+PYSearchExtension.h */,
+				FB607A26256E673500F2840C /* UIColor+PYSearchExtension.m */,
+				FB607A2E256E673500F2840C /* PYSearchSuggestionViewController.h */,
+				FB607A28256E673500F2840C /* PYSearchSuggestionViewController.m */,
+				FB607A2B256E673500F2840C /* PYSearch.bundle */,
+			);
+			path = PYSearch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2319,6 +2376,7 @@
 				58A043DB206B2E1E003CB4E5 /* RSA证书 in Resources */,
 				58651AB81FFE6D6F0087419D /* SINStatusToolBarView.xib in Resources */,
 				5892ACBB1FF4EF4500E868C2 /* Sina.xcassets in Resources */,
+				FB607A37256E673500F2840C /* PYSearch.bundle in Resources */,
 				58DC83F71FFB478E0060DC03 /* CATransition3.png in Resources */,
 				58DC851D1FFC972C0060DC03 /* BSJGuidePushView.xib in Resources */,
 				58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */,
@@ -2429,6 +2487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58DC850C1FFC972C0060DC03 /* BSJTopic.m in Sources */,
+				FB607A38256E673500F2840C /* NSBundle+PYSearchExtension.m in Sources */,
 				58651AB11FFE6D6F0087419D /* SINStatusToolBarView.m in Sources */,
 				58DC83E71FFB44380060DC03 /* WPFSnapView.m in Sources */,
 				5840384D1FF7FBCF002A0566 /* LMJMasonryViewController.m in Sources */,
@@ -2494,8 +2553,10 @@
 				5840385D1FF873A8002A0566 /* LMJAnnotationCustomPopView.m in Sources */,
 				58651AB41FFE6D6F0087419D /* SINUnLoginRegisterView.m in Sources */,
 				58651ABD1FFE6D6F0087419D /* SINStatusListService.m in Sources */,
+				FB607A34256E673500F2840C /* PYSearchViewController.m in Sources */,
 				58651AA91FFE6D6F0087419D /* SINBroswerViewController.m in Sources */,
 				5822334520185F790008251F /* MCSphereTagCloudViewController.m in Sources */,
+				FB607A35256E673500F2840C /* PYSearchSuggestionViewController.m in Sources */,
 				FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */,
 				588CCD8B205DF92F0067E3C4 /* LMJCircleLayout.m in Sources */,
 				58DC83D11FFB43E30060DC03 /* LMJClipImageViewController.m in Sources */,
@@ -2534,6 +2595,7 @@
 				5892AD531FF5079C00E868C2 /* LMJCollectionViewController.m in Sources */,
 				584038831FF9F2F1002A0566 /* LMJAlertViewsViewController.m in Sources */,
 				58DC85131FFC972C0060DC03 /* BSJTopicCell.m in Sources */,
+				FB607A36256E673500F2840C /* PYSearchConst.m in Sources */,
 				58DC837F1FFB43460060DC03 /* LMJYinLZDTViewController.m in Sources */,
 				58DC825A1FFA7D7C0060DC03 /* LMJXGMVideo.m in Sources */,
 				58DC84001FFB47ED0060DC03 /* LMJHandleView.m in Sources */,
@@ -2572,6 +2634,7 @@
 				584038061FF62371002A0566 /* LMJAddressPickerViewController.m in Sources */,
 				58DC835A1FFB43100060DC03 /* LMJCoreAnimationViewController.m in Sources */,
 				589B57081FFFC53000B2D5A8 /* QQTimeTool.m in Sources */,
+				FB607A39256E673500F2840C /* UIView+PYSearchExtension.m in Sources */,
 				589B57051FFFC53000B2D5A8 /* NeteaseMusicAPI.m in Sources */,
 				584038131FF63617002A0566 /* LMJEasyBlankPageView.m in Sources */,
 				5892AD7B1FF5133800E868C2 /* MBProgressHUD+LMJ.m in Sources */,
@@ -2590,6 +2653,7 @@
 				584038501FF8727D002A0566 /* LMJBaiduMapViewController.m in Sources */,
 				58926426201B622B007DA41E /* BSJSQLiteManager.m in Sources */,
 				58DC84FA1FFC972C0060DC03 /* BSJEssenceViewController.m in Sources */,
+				FB60795F256E262700F2840C /* LMSearchController.m in Sources */,
 				58DC83E61FFB44380060DC03 /* WPFSpringView.m in Sources */,
 				58DC851E1FFC972C0060DC03 /* BSJTopicVideoView.m in Sources */,
 				584038571FF872EB002A0566 /* LMJBaiduPointAnnotation.m in Sources */,
@@ -2630,12 +2694,14 @@
 				585FC1E2208DC6B2003174A7 /* VIDDownLoadingCell.m in Sources */,
 				58223314201821910008251F /* UITextView+WZB.m in Sources */,
 				5892ADA01FF5F23D00E868C2 /* AdvertiseHelper.m in Sources */,
+				FB607963256E2CF500F2840C /* PYTempViewController.m in Sources */,
 				58DC85151FFC972C0060DC03 /* BSJTopicCmtCell.m in Sources */,
 				58DC85271FFC972C0060DC03 /* BSJTopicService.m in Sources */,
 				585FC1DF208DC1CF003174A7 /* VIDDownLoadedCell.m in Sources */,
 				58DC84011FFB47ED0060DC03 /* LMJDrawingView.m in Sources */,
 				58DC838C1FFB43460060DC03 /* LMJCAKeyFrameAnimationViewController.m in Sources */,
 				58DC85331FFCA30C0060DC03 /* UIImageView+FitNet.m in Sources */,
+				FB607A33256E673500F2840C /* UIColor+PYSearchExtension.m in Sources */,
 				5892AD5C1FF5079C00E868C2 /* LMJRefreshTableViewController.m in Sources */,
 				58DC83841FFB43460060DC03 /* LMJDYViewController.m in Sources */,
 				58DC83801FFB43460060DC03 /* LMJZDTPViewController.m in Sources */,

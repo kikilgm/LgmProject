@@ -38,7 +38,7 @@
 {
     LMJNavigationController *one = [[LMJNavigationController alloc] initWithRootViewController:[[LMJHomeViewController alloc] init]];
     
-    LMJNavigationController *two = [[LMJNavigationController alloc] initWithRootViewController:[[LMJNewViewController alloc] init]];
+    UINavigationController *two = [[UINavigationController alloc] initWithRootViewController:[[LMJNewViewController alloc] init]];
     
     LMJNavigationController *three = [[LMJNavigationController alloc] initWithRootViewController:[[LMJMessageViewController alloc] init]];
     

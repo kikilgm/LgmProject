@@ -91,6 +91,10 @@ pod 'ZFPlayer', '2.1.6'
 # 泡泡uibutton
 pod 'DWBubbleMenuButton'
 
+
+#一个搜索框架
+#pod "PYSearch"
+
 # 动态 collectionView
 #pod 'LxGridView'
 # 指纹识别

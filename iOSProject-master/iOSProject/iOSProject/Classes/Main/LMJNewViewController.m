@@ -41,6 +41,10 @@
 #import "LMJUniversalLinkViewController.h"
 #import "LMSegmentViewController.h"
 #import "LMCentreController.h"
+#import "LMSearchController.h"
+
+
+
 
 
 
@@ -52,6 +56,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    self.navigationController.navigationBar.hidden=YES;
+    // 不让自控制器控制系统导航条
+    self.navigationController.fd_viewControllerBasedNavigationBarAppearanceEnabled = NO;
+    
+    
 
     self.tableView.backgroundColor = [UIColor whiteColor];
 
@@ -212,10 +223,15 @@
     
     item43.destVc = [LMCentreController class];
     
+    LMJWordArrowItem *item44 = [LMJWordArrowItem itemWithTitle:@"搜索列表" subTitle: @"各种搜索样式"];
+    
+    item44.destVc = [LMSearchController class];
+    
+    
     
     
     LMJItemSection *section0;
-    section0 = [LMJItemSection sectionWithItems:@[item43,item42,item40, item41, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item101, item11, item12, item121,item13, item29, item30, item15, item16, item17, item18, item19, item20, item201, item21, item22, item24, item25, item26, item27, item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
+    section0 = [LMJItemSection sectionWithItems:@[item44,item43,item42,item40, item41, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item101, item11, item12, item121,item13, item29, item30, item15, item16, item17, item18, item19, item20, item201, item21, item22, item24, item25, item26, item27, item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
     
     
 //    [section0.items sortUsingComparator:^NSComparisonResult(LMJWordItem  *_Nonnull obj1, LMJWordItem  *_Nonnull obj2) {
