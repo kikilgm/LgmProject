@@ -278,22 +278,34 @@
 
 - (UIImage *)lmjNavigationBarLeftButtonImage:(UIButton *)leftButton navigationBar:(LMJNavigationBar *)navigationBar
 {
-    [leftButton setTitle:@"左边" forState: UIControlStateNormal];
-    [leftButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [leftButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    [leftButton setTitle:@"左边" forState: UIControlStateNormal];
+//    [leftButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+//    [leftButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     
-    return nil;
+    
+    
+    [leftButton addTarget:self action:@selector(BtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    UIImage *img=[UIImage imageNamed:@"nav_coin_icon"];
+
+    
+    return img;
 }
 
 
 - (UIImage *)lmjNavigationBarRightButtonImage:(UIButton *)rightButton navigationBar:(LMJNavigationBar *)navigationBar
 {
-    rightButton.backgroundColor = [UIColor redColor];
-    [rightButton setTitle:@"右边" forState:UIControlStateNormal];
-    [rightButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [rightButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    rightButton.backgroundColor = [UIColor redColor];
+//    [rightButton setTitle:@"右边" forState:UIControlStateNormal];
+//    [rightButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+//    [rightButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     
-    return nil;
+    [rightButton addTarget:self action:@selector(BtnClick) forControlEvents:UIControlEventTouchUpInside];
+    UIImage *img=[UIImage imageNamed:@"mine-setting-icon"];
+    
+    
+    return img;
 }
 
 
@@ -311,5 +323,33 @@
     return title;
 }
 
+
+-(void)BtnClick{
+    
+
+    //1.创建UIAlertControler
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"通知" message:@"点击了导航栏按钮" preferredStyle:UIAlertControllerStyleAlert];
+      
+        //2.1 确认按钮
+        UIAlertAction *conform = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSLog(@"点击了确认按钮");
+        }];
+        //2.2 取消按钮
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            NSLog(@"点击了取消按钮");
+        }];
+//        //2.3 还可以添加文本框 通过 alert.textFields.firstObject 获得该文本框
+//        [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+//            textField.placeholder = @"请填写您的反馈信息";
+//        }];
+     
+        //3.将动作按钮 添加到控制器中
+        [alert addAction:conform];
+        [alert addAction:cancel];
+        
+        //4.显示弹框
+        [self presentViewController:alert animated:YES completion:nil];
+    
+}
 
 @end
