@@ -89,8 +89,17 @@
     
     [self.sections addObjectsFromArray:@[section2, section1, section3, section0]];
     
+    
+    
+    
+    //设置小红点
     UITabBarItem *homeItem = self.navigationController.tabBarItem;
     [homeItem setBadgeValue:@"3"];
+    
+//    [homeItem setBadgeColor:[UIColor redColor]];
+    
+    
+    
 }
 
 

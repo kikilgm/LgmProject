@@ -12,6 +12,8 @@
 #import "LMJSettingCell.h"
 #import "MCSphereTagCloudViewController.h"
 #import "MCLocalHTMLViewController.h"
+#import "LMJMeViewController.h"
+
 @interface LMJCasesViewController ()
 
 @end
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"更多案例";
+//    self.title = @"案例";
     
     LMJWordArrowItem *item0 = [LMJWordArrowItem itemWithTitle:@"各种圆角btn" subTitle:@"MCCornersRoundViewController"];
     item0.destVc = [MCCornersRoundViewController class];
@@ -36,7 +38,13 @@
     LMJWordArrowItem *item3 = [LMJWordArrowItem itemWithTitle:@"多项测试" subTitle:@"MCTestViewController"];
     item3.destVc =  NSClassFromString(@"MCTestViewController");
     
-    LMJItemSection *section0 = [LMJItemSection sectionWithItems:@[item0, item1, item2, item3] andHeaderTitle:@"UI 更多案例" footerTitle:@"UI --end"];
+    
+    
+    
+    LMJWordArrowItem *item4 = [LMJWordArrowItem itemWithTitle:@"分享功能" subTitle:@"各种分享"];
+    item4.destVc =  NSClassFromString(@"LMJMeViewController");
+    
+    LMJItemSection *section0 = [LMJItemSection sectionWithItems:@[item0, item1, item2, item3,item4] andHeaderTitle:@"UI 更多案例" footerTitle:@"UI --end"];
     
     [self.sections addObject:section0];
 }

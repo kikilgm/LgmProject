@@ -66,7 +66,7 @@
 
     self.tableView.backgroundColor = [UIColor whiteColor];
 
-    [self.navigationController.tabBarItem setBadgeColor:[UIColor RandomColor]];
+//    [self.navigationController.tabBarItem setBadgeColor:[UIColor RandomColor]];
 
     [self.navigationController.tabBarItem setBadgeValue:@"2"];
 

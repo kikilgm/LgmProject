@@ -25,7 +25,7 @@
     [super viewDidLoad];
     LMJWeak(self);
     NSLog(@"%@", weakself);
-    self.navigationItem.title = @"功能实例";
+    self.navigationItem.title = @"实例";
     
     UIEdgeInsets edgeInsets = self.tableView.contentInset;
     edgeInsets.bottom += self.tabBarController.tabBar.lmj_height;
