@@ -111,14 +111,14 @@
 
         
         //tab文字 和 图标的间距
-        obj.tabBarItem.titlePositionAdjustment = UIOffsetMake(0,0);
+        obj.tabBarItem.titlePositionAdjustment = UIOffsetMake(0,-2);
         
         
         [obj.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#1a1a1a"],NSFontAttributeName:[UIFont
-        systemFontOfSize:12]} forState:UIControlStateNormal];
+        systemFontOfSize:11]} forState:UIControlStateNormal];
         
         [obj.tabBarItem  setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont
-        systemFontOfSize:12]} forState:UIControlStateSelected];
+        systemFontOfSize:11]} forState:UIControlStateSelected];
         
         
       //item0.image = [[UIImage imageNamed:@"notepad"]  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -158,7 +158,7 @@
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
         //速度控制函数，控制动画运行的节奏
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        animation.duration = 0.2;       //执行时间
+        animation.duration = 0.15;       //执行时间
         animation.repeatCount = 1;      //执行次数
         animation.autoreverses = YES;    //完成动画后会回到执行动画之前的状态
 
