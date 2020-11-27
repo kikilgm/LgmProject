@@ -92,9 +92,7 @@
     
     
     
-    //设置小红点
-    UITabBarItem *homeItem = self.navigationController.tabBarItem;
-    [homeItem setBadgeValue:@"3"];
+
     
 //    [homeItem setBadgeColor:[UIColor redColor]];
     

@@ -13,6 +13,9 @@
 #import "LMJMeViewController.h"
 #import "LMJNewViewController.h"
 #import "LMJCasesViewController.h"
+#import "LgmNewHomeController.h"
+
+
 
 
 @interface LMJTabBarController ()<UITabBarControllerDelegate>
@@ -50,17 +53,22 @@
 - (void)addChildViewControllers
 {
     
-    UINavigationController *one = [[UINavigationController alloc] initWithRootViewController:[[LMJNewViewController alloc] init]];
     
-    LMJNavigationController *two = [[LMJNavigationController alloc] initWithRootViewController:[[LMJHomeViewController alloc] init]];
     
-    LMJNavigationController *three = [[LMJNavigationController alloc] initWithRootViewController:[[LMJMessageViewController alloc] init]];
+    UINavigationController *one = [[UINavigationController alloc] initWithRootViewController:[[LgmNewHomeController alloc] init]];
+    
+    
+    UINavigationController *two = [[UINavigationController alloc] initWithRootViewController:[[LMJNewViewController alloc] init]];
+    
+    LMJNavigationController *three = [[LMJNavigationController alloc] initWithRootViewController:[[LMJHomeViewController alloc] init]];
+    
+    LMJNavigationController *four = [[LMJNavigationController alloc] initWithRootViewController:[[LMJMessageViewController alloc] init]];
     
 //    LMJNavigationController *four = [[LMJNavigationController alloc] initWithRootViewController:[[LMJMeViewController alloc] init]];
     
-    LMJNavigationController *four = [[LMJNavigationController alloc] initWithRootViewController:[[LMJCasesViewController alloc] init]];
+    LMJNavigationController *five = [[LMJNavigationController alloc] initWithRootViewController:[[LMJCasesViewController alloc] init]];
     
-    self.viewControllers = @[one,two,three,four];
+    self.viewControllers = @[one,two,three,four,five];
     
 }
 
@@ -68,36 +76,41 @@
 {
     
     NSDictionary *firstTabBarItemsAttributes = @{
-                                                    @"TabBarItemTitle" : @"预演",
-                                                    @"TabBarItemImage" : @"home",
-                                                    @"TabBarItemSelectedImage" : @"homeon",
+                                                    @"TabBarItemTitle" : @"首页",
+                                                    @"TabBarItemImage" : @"Home",
+                                                    @"TabBarItemSelectedImage" : @"Home_s",
                                                     
                                                  };
     
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                    @"TabBarItemTitle" : @"基础",
-                                                    @"TabBarItemImage" : @"9.9",
-                                                    @"TabBarItemSelectedImage" : @"9.9on",
+                                                    @"TabBarItemTitle" : @"功能",
+                                                    @"TabBarItemImage" : @"Category",
+                                                    @"TabBarItemSelectedImage" : @"Category_s",
                                                  };
+    
     NSDictionary *thirdTabBarItemsAttributes = @{
-                                                 @"TabBarItemTitle" : @"实例",
-                                                 @"TabBarItemImage" : @"youhuiquan",
-                                                 @"TabBarItemSelectedImage" : @"youhuiquanon",
+                                                 @"TabBarItemTitle" : @"基础",
+                                                 @"TabBarItemImage" : @"Bu",
+                                                 @"TabBarItemSelectedImage" : @"Bu_s",
                                                  };
-//    NSDictionary *fourthTabBarItemsAttributes = @{
-//                                                  @"TabBarItemTitle" : @"分享",
-//                                                  @"TabBarItemImage" : @"tabBar_me_icon",
-//                                                  @"TabBarItemSelectedImage" : @"tabBar_me_click_icon"
-//                                                  };
+    
+    NSDictionary *fourthTabBarItemsAttributes = @{
+                                                  @"TabBarItemTitle" : @"实例",
+                                                  @"TabBarItemImage" : @"Shop",
+                                                  @"TabBarItemSelectedImage" : @"Shop_s"
+                                                  };
+    
     NSDictionary *fifthTabBarItemsAttributes = @{
                                                   @"TabBarItemTitle" : @"更多",
-                                                  @"TabBarItemImage" : @"my",
-                                                  @"TabBarItemSelectedImage" : @"myon"
+                                                  @"TabBarItemImage" : @"mine",
+                                                  @"TabBarItemSelectedImage" : @"mine_s"
                                                   };
+    
     NSArray<NSDictionary *>  *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,
                                        secondTabBarItemsAttributes,
                                        thirdTabBarItemsAttributes,
+                                       fourthTabBarItemsAttributes,
                                        fifthTabBarItemsAttributes
                                        ];
     
@@ -117,7 +130,7 @@
         [obj.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#1a1a1a"],NSFontAttributeName:[UIFont
         systemFontOfSize:11]} forState:UIControlStateNormal];
         
-        [obj.tabBarItem  setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont
+        [obj.tabBarItem  setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#EA4747"],NSFontAttributeName:[UIFont
         systemFontOfSize:11]} forState:UIControlStateSelected];
         
         

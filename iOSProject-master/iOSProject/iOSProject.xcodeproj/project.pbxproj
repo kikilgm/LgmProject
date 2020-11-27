@@ -343,6 +343,7 @@
 		FB607A37256E673500F2840C /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB607A2B256E673500F2840C /* PYSearch.bundle */; };
 		FB607A38256E673500F2840C /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A2C256E673500F2840C /* NSBundle+PYSearchExtension.m */; };
 		FB607A39256E673500F2840C /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A32256E673500F2840C /* UIView+PYSearchExtension.m */; };
+		FB65D0712570C60400F40EAF /* LgmNewHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB65D0702570C60400F40EAF /* LgmNewHomeController.m */; };
 		FB82E5972552584900B8AF80 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB82E5952552584800B8AF80 /* YJSegmentedControl.m */; };
 		FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB96E4662553C14900F72CF9 /* LMCentreController.m */; };
 		FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */; };
@@ -974,6 +975,8 @@
 		FB607A30256E673500F2840C /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
 		FB607A31256E673500F2840C /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
 		FB607A32256E673500F2840C /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
+		FB65D06F2570C60400F40EAF /* LgmNewHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LgmNewHomeController.h; sourceTree = "<group>"; };
+		FB65D0702570C60400F40EAF /* LgmNewHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LgmNewHomeController.m; sourceTree = "<group>"; };
 		FB82E5952552584800B8AF80 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
 		FB82E5962552584900B8AF80 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
 		FB96E4652553C14900F72CF9 /* LMCentreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCentreController.h; sourceTree = "<group>"; };
@@ -1597,6 +1600,8 @@
 				5892AD701FF5113700E868C2 /* LMJMeViewController.m */,
 				58B59D082015B17800C4C4C9 /* LMJCasesViewController.h */,
 				58B59D092015B17800C4C4C9 /* LMJCasesViewController.m */,
+				FB65D06F2570C60400F40EAF /* LgmNewHomeController.h */,
+				FB65D0702570C60400F40EAF /* LgmNewHomeController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -2752,6 +2757,7 @@
 				58C51F8E208C2EF100EECAAA /* VIDListViewController.m in Sources */,
 				58DC83C41FFB43E30060DC03 /* LMJXueHuaViewController.m in Sources */,
 				58DC850F1FFC972C0060DC03 /* BSJTopicViewModel.m in Sources */,
+				FB65D0712570C60400F40EAF /* LgmNewHomeController.m in Sources */,
 				584038631FF87939002A0566 /* LMJUpLoadImagesViewController.m in Sources */,
 				58DC84F81FFC972C0060DC03 /* BSJTrendViewController.m in Sources */,
 				5892AD6F1FF5110B00E868C2 /* LMJHomeViewController.m in Sources */,

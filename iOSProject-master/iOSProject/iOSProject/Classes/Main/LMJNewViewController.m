@@ -68,7 +68,7 @@
 
 //    [self.navigationController.tabBarItem setBadgeColor:[UIColor RandomColor]];
 
-    [self.navigationController.tabBarItem setBadgeValue:@"2"];
+//    [self.navigationController.tabBarItem setBadgeValue:@"2"];
 
     UIEdgeInsets edgeInsets = self.tableView.contentInset;
     edgeInsets.bottom += self.tabBarController.tabBar.lmj_height;
@@ -272,7 +272,7 @@
 
 - (NSMutableAttributedString*)lmjNavigationBarTitle:(LMJNavigationBar *)navigationBar
 {
-    return [self changeTitle:@"自定义导航栏 View"];
+    return [self changeTitle:@"自定义导航栏View"];
 }
 
 
