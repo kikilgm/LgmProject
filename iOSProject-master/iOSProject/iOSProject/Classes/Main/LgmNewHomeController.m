@@ -13,25 +13,12 @@
 
 @interface LgmNewHomeController ()<SDCycleScrollViewDelegate>
 
-
-
 @property (nonatomic, strong) UIImageView  * bgImageView;
 @property (nonatomic, strong) UIScrollView * bgScrollView;
-
-// 本地图片
-@property (nonatomic, strong) SDCycleScrollView * localCycleScrollView;
-
-// 网络图片
-@property (nonatomic, strong) SDCycleScrollView * webCycleScrollView;
-
 // 自定义pageControl
 @property (nonatomic, strong) SDCycleScrollView * customCycleScrollView;
-
 // 跑马灯效果
 @property (nonatomic, strong) SDCycleScrollView * textCycleScrollView;
-
-
-
 
 @end
 
@@ -44,8 +31,13 @@
     // 不让自控制器控制系统导航条
     self.navigationController.fd_viewControllerBasedNavigationBarAppearanceEnabled = NO;
     
-    // Do any additional setup after loading the view.
+//    self.bgScrollView
     
+    
+    
+    
+    
+    // Do any additional setup after loading the view.
 //    [self.navigationController.tabBarItem setBadgeValue:@"2"];
     //设置小红点
     UITabBarItem *homeItem = self.navigationController.tabBarItem;
@@ -86,6 +78,28 @@
     }
     return _customCycleScrollView;
 }
+
+
+/** 点击图片回调 */
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+    
+    
+    
+    
+}
+
+/** 图片滚动回调 */
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didScrollToIndex:(NSInteger)index{
+    
+    
+    
+    
+}
+
+
+
+
+
 
 
 

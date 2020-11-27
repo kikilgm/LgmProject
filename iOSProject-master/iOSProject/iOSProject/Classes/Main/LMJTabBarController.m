@@ -121,30 +121,22 @@
         obj.tabBarItem.selectedImage = [[UIImage imageNamed:tabBarItemsAttributes[idx][@"TabBarItemSelectedImage"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
 
-
-        
         //tab文字 和 图标的间距
         obj.tabBarItem.titlePositionAdjustment = UIOffsetMake(0,-2);
         
-        
-        [obj.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#1a1a1a"],NSFontAttributeName:[UIFont
+        [obj.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#9B9B9B"],NSFontAttributeName:[UIFont
         systemFontOfSize:11]} forState:UIControlStateNormal];
         
         [obj.tabBarItem  setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#EA4747"],NSFontAttributeName:[UIFont
         systemFontOfSize:11]} forState:UIControlStateSelected];
         
-        
+        //从父类修改 tabbar 文字颜色
+        self.tabBar.tintColor = [UIColor colorWithHexString:@"#EA4747"];
       //item0.image = [[UIImage imageNamed:@"notepad"]  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-
 
         
     }];
     
-//    self.tabBar.tintColor = [UIColor redColor];
-    
-    
-
-   
 
 }
 
