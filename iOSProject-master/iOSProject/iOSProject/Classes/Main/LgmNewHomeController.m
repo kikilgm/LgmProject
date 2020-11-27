@@ -63,14 +63,12 @@
 
 
 
-
 //创建轮播图
 -(SDCycleScrollView *)customCycleScrollView
 {
     if (!_customCycleScrollView)
     {
         self.customCycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
-        
         self.customCycleScrollView.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];
         self.customCycleScrollView.pageDotImage = [UIImage imageNamed:@"pageControlDot"];
         self.customCycleScrollView.pageControlAliment=SDCycleScrollViewPageContolAlimentRight;
@@ -79,9 +77,10 @@
         
         // 网络图片数组
         NSArray *imagesURLStrings = @[
-                                      @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606475465142&di=82a45af39e77a508f7bf5cc5e27dd374&imgtype=0&src=http%3A%2F%2Fimglf3.nosdn.127.net%2Fimg%2FL0lHRjFqbkVQa2pIQXFwYWE2WUd6Q3A4dUN5aFJhZlBOaTd0b3VDVFlQNUNTeGpQUGpZbGF3PT0.jpg%3FimageView%26thumbnail%3D1680x0%26quality%3D96%26stripmeta%3D0%26type%3Djpg%257Cwatermark%26type%3D2%26text%3Dwqkg",
                                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606475529468&di=bfbb865a8025f22dabbbcbf9e72aca43&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F17%2F10%2F23%2Ff7b8f4a806cfabad0375b6b46b854f0d.jpg",
-                                      @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg"
+                                      @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606476326190&di=9cad2c53b7af10383a7af0e19842eb13&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F70%2F97%2F925ba5c5e126055.jpg",
+                                      @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg",
+                                      @"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2030039030,3450047023&fm=26&gp=0.jpg",
                                       ];
         self.customCycleScrollView.imageURLStringsGroup = imagesURLStrings;
     }
