@@ -54,7 +54,6 @@
 {
     
     
-    
     UINavigationController *one = [[UINavigationController alloc] initWithRootViewController:[[LgmNewHomeController alloc] init]];
     
     
@@ -140,10 +139,13 @@
 
 }
 
+
+
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     return YES;
 }
+
 
 
 
@@ -176,6 +178,8 @@
         
         
         
+
+        
         
 //        //向上移动 效果
 //        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
@@ -190,7 +194,6 @@
                 
         
         
-
         
         
         
@@ -214,10 +217,7 @@
         
         
         
-        
-        
 
-        
         
         
 //        //z轴旋转180度  太夸张
