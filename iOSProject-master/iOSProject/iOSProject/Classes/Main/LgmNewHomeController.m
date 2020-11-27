@@ -7,8 +7,31 @@
 //
 
 #import "LgmNewHomeController.h"
+#import "SDCycleScrollView.h"
 
-@interface LgmNewHomeController ()
+#define kWidth [UIScreen mainScreen].bounds.size.width
+
+@interface LgmNewHomeController ()<SDCycleScrollViewDelegate>
+
+
+
+@property (nonatomic, strong) UIImageView  * bgImageView;
+@property (nonatomic, strong) UIScrollView * bgScrollView;
+
+// 本地图片
+@property (nonatomic, strong) SDCycleScrollView * localCycleScrollView;
+
+// 网络图片
+@property (nonatomic, strong) SDCycleScrollView * webCycleScrollView;
+
+// 自定义pageControl
+@property (nonatomic, strong) SDCycleScrollView * customCycleScrollView;
+
+// 跑马灯效果
+@property (nonatomic, strong) SDCycleScrollView * textCycleScrollView;
+
+
+
 
 @end
 
@@ -27,8 +50,44 @@
     //设置小红点
     UITabBarItem *homeItem = self.navigationController.tabBarItem;
     [homeItem setBadgeValue:@"3"];
-
+    SDCycleScrollView *banner= [self customCycleScrollView];
+    [self.view addSubview:banner];
+    [banner mas_makeConstraints:^(MASConstraintMaker *make) {
+          make.left.mas_equalTo(self.view).with.offset(0);
+          make.top.equalTo(@88);
+          make.width.mas_equalTo(kWidth);
+          make.height.mas_equalTo(150);
+      }];
+    
 }
+
+
+
+
+//创建轮播图
+-(SDCycleScrollView *)customCycleScrollView
+{
+    if (!_customCycleScrollView)
+    {
+        self.customCycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
+        
+        self.customCycleScrollView.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];
+        self.customCycleScrollView.pageDotImage = [UIImage imageNamed:@"pageControlDot"];
+        self.customCycleScrollView.pageControlAliment=SDCycleScrollViewPageContolAlimentRight;
+        self.customCycleScrollView.pageControlDotSize=CGSizeMake(5,5);
+        self.customCycleScrollView.bannerImageViewContentMode=UIViewContentModeScaleAspectFill;
+        
+        // 网络图片数组
+        NSArray *imagesURLStrings = @[
+                                      @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606475465142&di=82a45af39e77a508f7bf5cc5e27dd374&imgtype=0&src=http%3A%2F%2Fimglf3.nosdn.127.net%2Fimg%2FL0lHRjFqbkVQa2pIQXFwYWE2WUd6Q3A4dUN5aFJhZlBOaTd0b3VDVFlQNUNTeGpQUGpZbGF3PT0.jpg%3FimageView%26thumbnail%3D1680x0%26quality%3D96%26stripmeta%3D0%26type%3Djpg%257Cwatermark%26type%3D2%26text%3Dwqkg",
+                                      @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606475529468&di=bfbb865a8025f22dabbbcbf9e72aca43&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F17%2F10%2F23%2Ff7b8f4a806cfabad0375b6b46b854f0d.jpg",
+                                      @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg"
+                                      ];
+        self.customCycleScrollView.imageURLStringsGroup = imagesURLStrings;
+    }
+    return _customCycleScrollView;
+}
+
 
 
 //- (NSMutableAttributedString*)lmjNavigationBarTitle:(LMJNavigationBar *)navigationBar
