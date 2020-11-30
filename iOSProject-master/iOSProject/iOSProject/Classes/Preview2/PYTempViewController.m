@@ -11,7 +11,11 @@
 
 @end
 
+
+
 @implementation PYTempViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,10 +24,15 @@
     self.view.backgroundColor = PYSEARCH_RANDOM_COLOR;
 }
 
-- (void)didReceiveMemoryWarning {
+
+
+
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 
 #pragma mark - LMJNavUIBaseViewControllerDataSource
@@ -35,6 +44,9 @@
     
     return [UIImage imageNamed:@"NavgationBar_blue_back"];
 }
+
+
+
 
 #pragma mark - LMJNavUIBaseViewControllerDelegate
 /** 左边的按钮的点击 */

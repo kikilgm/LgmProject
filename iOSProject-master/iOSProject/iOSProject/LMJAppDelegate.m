@@ -14,6 +14,8 @@
 #import "LMJUMengHelper.h"
 #import <UserNotificationsUI/UserNotificationsUI.h>
 
+
+
 @implementation LMJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -39,7 +41,6 @@
     
     
     
-    
     // 检查版本更新
     NSLog(@"%zd", [LMJRequestManager sharedManager].reachabilityManager.networkReachabilityStatus);
     
@@ -61,6 +62,8 @@
     }
     return YES;
 }
+
+
 
 
 

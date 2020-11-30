@@ -334,6 +334,24 @@
 		58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */ = {isa = PBXBuildFile; fileRef = 58E02EED209D8BA4005431BA /* LMJUniversalLink.html */; };
 		FB297E31255250EF006E297C /* LMSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB297E30255250EF006E297C /* LMSegmentViewController.m */; };
 		FB3CFB652554E8E60025C16C /* SIMAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */; };
+		FB5D786A2574925E00089815 /* LMSvgaController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D78692574925E00089815 /* LMSvgaController.m */; };
+		FB5D79912574F74A00089815 /* mutiMatte.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79802574F74A00089815 /* mutiMatte.svga */; };
+		FB5D79922574F74A00089815 /* kingset.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79812574F74A00089815 /* kingset.svga */; };
+		FB5D79932574F74A00089815 /* TwitterHeart.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79822574F74A00089815 /* TwitterHeart.svga */; };
+		FB5D79942574F74A00089815 /* matteBitmap.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79832574F74A00089815 /* matteBitmap.svga */; };
+		FB5D79952574F74A00089815 /* rose.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79842574F74A00089815 /* rose.svga */; };
+		FB5D79962574F74A00089815 /* EmptyState.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79852574F74A00089815 /* EmptyState.svga */; };
+		FB5D79972574F74A00089815 /* Rocket.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79862574F74A00089815 /* Rocket.svga */; };
+		FB5D79982574F74A00089815 /* heartbeat.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79872574F74A00089815 /* heartbeat.svga */; };
+		FB5D79992574F74A00089815 /* posche.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79882574F74A00089815 /* posche.svga */; };
+		FB5D799A2574F74A00089815 /* matteBitmap_1.x.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79892574F74A00089815 /* matteBitmap_1.x.svga */; };
+		FB5D799B2574F74A00089815 /* HamburgerArrow.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D798A2574F74A00089815 /* HamburgerArrow.svga */; };
+		FB5D799C2574F74A00089815 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB5D798B2574F74A00089815 /* README.md */; };
+		FB5D799D2574F74A00089815 /* Walkthrough.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D798C2574F74A00089815 /* Walkthrough.svga */; };
+		FB5D799E2574F74A00089815 /* halloween.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D798D2574F74A00089815 /* halloween.svga */; };
+		FB5D799F2574F74A00089815 /* matteRect.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D798E2574F74A00089815 /* matteRect.svga */; };
+		FB5D79A02574F74A00089815 /* PinJump.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D798F2574F74A00089815 /* PinJump.svga */; };
+		FB5D79A12574F74A00089815 /* angel.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79902574F74A00089815 /* angel.svga */; };
 		FB60795F256E262700F2840C /* LMSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60795E256E262700F2840C /* LMSearchController.m */; };
 		FB607963256E2CF500F2840C /* PYTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607961256E2CF500F2840C /* PYTempViewController.m */; };
 		FB607A33256E673500F2840C /* UIColor+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A26256E673500F2840C /* UIColor+PYSearchExtension.m */; };
@@ -955,6 +973,25 @@
 		FB297E30255250EF006E297C /* LMSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSegmentViewController.m; sourceTree = "<group>"; };
 		FB3CFB632554E8E60025C16C /* SIMAvatarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMAvatarTableViewCell.h; sourceTree = "<group>"; };
 		FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMAvatarTableViewCell.m; sourceTree = "<group>"; };
+		FB5D78682574925E00089815 /* LMSvgaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSvgaController.h; sourceTree = "<group>"; };
+		FB5D78692574925E00089815 /* LMSvgaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSvgaController.m; sourceTree = "<group>"; };
+		FB5D79802574F74A00089815 /* mutiMatte.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = mutiMatte.svga; sourceTree = "<group>"; };
+		FB5D79812574F74A00089815 /* kingset.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = kingset.svga; sourceTree = "<group>"; };
+		FB5D79822574F74A00089815 /* TwitterHeart.svga */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwitterHeart.svga; sourceTree = "<group>"; };
+		FB5D79832574F74A00089815 /* matteBitmap.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = matteBitmap.svga; sourceTree = "<group>"; };
+		FB5D79842574F74A00089815 /* rose.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rose.svga; sourceTree = "<group>"; };
+		FB5D79852574F74A00089815 /* EmptyState.svga */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmptyState.svga; sourceTree = "<group>"; };
+		FB5D79862574F74A00089815 /* Rocket.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rocket.svga; sourceTree = "<group>"; };
+		FB5D79872574F74A00089815 /* heartbeat.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = heartbeat.svga; sourceTree = "<group>"; };
+		FB5D79882574F74A00089815 /* posche.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = posche.svga; sourceTree = "<group>"; };
+		FB5D79892574F74A00089815 /* matteBitmap_1.x.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = matteBitmap_1.x.svga; sourceTree = "<group>"; };
+		FB5D798A2574F74A00089815 /* HamburgerArrow.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = HamburgerArrow.svga; sourceTree = "<group>"; };
+		FB5D798B2574F74A00089815 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB5D798C2574F74A00089815 /* Walkthrough.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Walkthrough.svga; sourceTree = "<group>"; };
+		FB5D798D2574F74A00089815 /* halloween.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = halloween.svga; sourceTree = "<group>"; };
+		FB5D798E2574F74A00089815 /* matteRect.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = matteRect.svga; sourceTree = "<group>"; };
+		FB5D798F2574F74A00089815 /* PinJump.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = PinJump.svga; sourceTree = "<group>"; };
+		FB5D79902574F74A00089815 /* angel.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = angel.svga; sourceTree = "<group>"; };
 		FB60795D256E262700F2840C /* LMSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSearchController.h; sourceTree = "<group>"; };
 		FB60795E256E262700F2840C /* LMSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSearchController.m; sourceTree = "<group>"; };
 		FB607961256E2CF500F2840C /* PYTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTempViewController.m; sourceTree = "<group>"; };
@@ -1199,6 +1236,8 @@
 				FB607961256E2CF500F2840C /* PYTempViewController.m */,
 				FB607987256E655500F2840C /* PYSearchViewController.h */,
 				FB6079DD256E661B00F2840C /* PYSearchViewController.h */,
+				FB5D78682574925E00089815 /* LMSvgaController.h */,
+				FB5D78692574925E00089815 /* LMSvgaController.m */,
 			);
 			path = Preview2;
 			sourceTree = "<group>";
@@ -1443,6 +1482,7 @@
 				5892ACB01FF4EEB300E868C2 /* LMJAppDelegate.h */,
 				5892ACB11FF4EEB300E868C2 /* LMJAppDelegate.m */,
 				58651ABF1FFE6F3F0087419D /* Classes */,
+				FB5D797F2574F74900089815 /* SVGA-Samples */,
 				5892ACA01FF4EB4A00E868C2 /* Assets.xcassets */,
 				5892ACB71FF4EF4500E868C2 /* BSJ.xcassets */,
 				5892ACB31FF4EF4400E868C2 /* Preview.xcassets */,
@@ -2267,6 +2307,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB5D797F2574F74900089815 /* SVGA-Samples */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D79802574F74A00089815 /* mutiMatte.svga */,
+				FB5D79812574F74A00089815 /* kingset.svga */,
+				FB5D79822574F74A00089815 /* TwitterHeart.svga */,
+				FB5D79832574F74A00089815 /* matteBitmap.svga */,
+				FB5D79842574F74A00089815 /* rose.svga */,
+				FB5D79852574F74A00089815 /* EmptyState.svga */,
+				FB5D79862574F74A00089815 /* Rocket.svga */,
+				FB5D79872574F74A00089815 /* heartbeat.svga */,
+				FB5D79882574F74A00089815 /* posche.svga */,
+				FB5D79892574F74A00089815 /* matteBitmap_1.x.svga */,
+				FB5D798A2574F74A00089815 /* HamburgerArrow.svga */,
+				FB5D798B2574F74A00089815 /* README.md */,
+				FB5D798C2574F74A00089815 /* Walkthrough.svga */,
+				FB5D798D2574F74A00089815 /* halloween.svga */,
+				FB5D798E2574F74A00089815 /* matteRect.svga */,
+				FB5D798F2574F74A00089815 /* PinJump.svga */,
+				FB5D79902574F74A00089815 /* angel.svga */,
+			);
+			path = "SVGA-Samples";
+			sourceTree = "<group>";
+		};
 		FB607A24256E673500F2840C /* PYSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -2369,6 +2433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5D79992574F74A00089815 /* posche.svga in Resources */,
 				58A8584F207878430063DE98 /* LMJWebImageCacheCell.xib in Resources */,
 				58DC83821FFB43460060DC03 /* LMJLZDHDTSViewController.xib in Resources */,
 				585A22FE2082FA28001BD3AD /* JSBridge_js in Resources */,
@@ -2380,21 +2445,33 @@
 				58DC83C71FFB43E30060DC03 /* LMJDrawBoardViewController.xib in Resources */,
 				58A043DB206B2E1E003CB4E5 /* RSA证书 in Resources */,
 				58651AB81FFE6D6F0087419D /* SINStatusToolBarView.xib in Resources */,
+				FB5D79922574F74A00089815 /* kingset.svga in Resources */,
 				5892ACBB1FF4EF4500E868C2 /* Sina.xcassets in Resources */,
 				FB607A37256E673500F2840C /* PYSearch.bundle in Resources */,
+				FB5D79972574F74A00089815 /* Rocket.svga in Resources */,
+				FB5D79962574F74A00089815 /* EmptyState.svga in Resources */,
+				FB5D799C2574F74A00089815 /* README.md in Resources */,
 				58DC83F71FFB478E0060DC03 /* CATransition3.png in Resources */,
+				FB5D79932574F74A00089815 /* TwitterHeart.svga in Resources */,
 				58DC851D1FFC972C0060DC03 /* BSJGuidePushView.xib in Resources */,
 				58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */,
 				58DC846A1FFC94B30060DC03 /* team_dictionary.plist in Resources */,
 				5892ACB91FF4EF4500E868C2 /* Preview.xcassets in Resources */,
 				5892ACBA1FF4EF4500E868C2 /* QQMusic.xcassets in Resources */,
+				FB5D79912574F74A00089815 /* mutiMatte.svga in Resources */,
+				FB5D799F2574F74A00089815 /* matteRect.svga in Resources */,
 				58A17C542007112A00B350AB /* intro_3.jpg in Resources */,
+				FB5D79A02574F74A00089815 /* PinJump.svga in Resources */,
+				FB5D799B2574F74A00089815 /* HamburgerArrow.svga in Resources */,
+				FB5D79942574F74A00089815 /* matteBitmap.svga in Resources */,
+				FB5D799D2574F74A00089815 /* Walkthrough.svga in Resources */,
 				58DC85001FFC972C0060DC03 /* BSJCommentPageViewController.xib in Resources */,
 				58DC851F1FFC972C0060DC03 /* BSJTopicCell.xib in Resources */,
 				589B57041FFFC52F00B2D5A8 /* QQLrcCell.xib in Resources */,
 				583D507020731574001480C8 /* LMJLocalJsons in Resources */,
 				58DC83871FFB43460060DC03 /* LMJDYViewController.xib in Resources */,
 				58DC83F31FFB47710060DC03 /* 钟表.png in Resources */,
+				FB5D799A2574F74A00089815 /* matteBitmap_1.x.svga in Resources */,
 				58DC83F81FFB478E0060DC03 /* CATransition1.png in Resources */,
 				58DC83C81FFB43E30060DC03 /* LMJPicClipViewController.xib in Resources */,
 				58A17C532007112A00B350AB /* intro_2.jpg in Resources */,
@@ -2416,10 +2493,14 @@
 				58DC837E1FFB43460060DC03 /* LMJZDTPViewController.xib in Resources */,
 				584038691FF88594002A0566 /* LMJUpLoadImageCell.xib in Resources */,
 				585A22F52081FD1F001BD3AD /* QQResources.bundle in Resources */,
+				FB5D799E2574F74A00089815 /* halloween.svga in Resources */,
 				58DC83F11FFB47710060DC03 /* 小新.jpg in Resources */,
+				FB5D79A12574F74A00089815 /* angel.svga in Resources */,
+				FB5D79982574F74A00089815 /* heartbeat.svga in Resources */,
 				5892ACBD1FF4EF4500E868C2 /* BSJ.xcassets in Resources */,
 				58DC85231FFC972C0060DC03 /* BSJTopicCmtCell.xib in Resources */,
 				5822335620188F6E0008251F /* adm in Resources */,
+				FB5D79952574F74A00089815 /* rose.svga in Resources */,
 				58DC83C31FFB43E30060DC03 /* LMJDrawProgressViewController.xib in Resources */,
 				58DC83F91FFB478E0060DC03 /* CATransition2.png in Resources */,
 			);
@@ -2667,6 +2748,7 @@
 				58DC84411FFBD1290060DC03 /* LMJNSOperationViewController.m in Sources */,
 				58DC851B1FFC972C0060DC03 /* BSJMeSquareCell.m in Sources */,
 				58A17C4E2005F4E600B350AB /* LMJParagraph.m in Sources */,
+				FB5D786A2574925E00089815 /* LMSvgaController.m in Sources */,
 				58DC83CE1FFB43E30060DC03 /* LMJPiesViewController.m in Sources */,
 				589B57071FFFC53000B2D5A8 /* QQLrcDataTool.m in Sources */,
 				58651AA41FFE6D6F0087419D /* SINProfileViewController.m in Sources */,

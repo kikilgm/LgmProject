@@ -42,28 +42,25 @@
 #import "LMSegmentViewController.h"
 #import "LMCentreController.h"
 #import "LMSearchController.h"
-
-
-
-
+#import "LMSvgaController.h"
 
 
 @interface LMJNewViewController ()
 
+
 @end
+
+
 
 @implementation LMJNewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     self.navigationController.navigationBar.hidden=YES;
     // 不让自控制器控制系统导航条
     self.navigationController.fd_viewControllerBasedNavigationBarAppearanceEnabled = NO;
     
-    
-
     self.tableView.backgroundColor = [UIColor whiteColor];
 
 //    [self.navigationController.tabBarItem setBadgeColor:[UIColor RandomColor]];
@@ -205,13 +202,16 @@
     
     item30.destVc = [LMJVFLLayoutViewController class];
     
+    
     LMJWordArrowItem *item40 = [LMJWordArrowItem itemWithTitle:@"RSA 加密解密" subTitle: @"网络数据加密解密"];
     
     item40.destVc = [LMJRSAViewController class];
     
+    
     LMJWordArrowItem *item41 = [LMJWordArrowItem itemWithTitle:@"通用链接跳转" subTitle: @"浏览器,短信,邮件,其它App,都可以跳转本 App"];
     
     item41.destVc = [LMJUniversalLinkViewController class];
+    
     
     
     LMJWordArrowItem *item42 = [LMJWordArrowItem itemWithTitle:@"分段选择" subTitle: @"列表顶部的分段筛选数据"];
@@ -219,19 +219,27 @@
     item42.destVc = [LMSegmentViewController class];
     
     
+    
     LMJWordArrowItem *item43 = [LMJWordArrowItem itemWithTitle:@"我的中心" subTitle: @"个人中心常见的列表样式"];
     
     item43.destVc = [LMCentreController class];
+    
+    
     
     LMJWordArrowItem *item44 = [LMJWordArrowItem itemWithTitle:@"搜索列表" subTitle: @"各种搜索样式"];
     
     item44.destVc = [LMSearchController class];
     
+
+    
+    LMJWordArrowItem *item45 = [LMJWordArrowItem itemWithTitle:@"SVGA动画" subTitle: @"直播礼物打赏特效"];
+    item45.destVc = [LMSvgaController class];
     
     
     
     LMJItemSection *section0;
-    section0 = [LMJItemSection sectionWithItems:@[item44,item43,item42,item40, item41, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item101, item11, item12, item121,item13, item29, item30, item15, item16, item17, item18, item19, item20, item201, item21, item22, item24, item25, item26, item27, item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
+    section0 = [LMJItemSection sectionWithItems:@[item45,item44,item43,item42,item40, item41, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item101, item11, item12, item121,item13, item29, item30, item15, item16, item17, item18, item19, item20, item201, item21, item22, item24, item25, item26, item27, item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
+    
     
     
 //    [section0.items sortUsingComparator:^NSComparisonResult(LMJWordItem  *_Nonnull obj1, LMJWordItem  *_Nonnull obj2) {
@@ -239,8 +247,14 @@
 //    }];
     
     
+    
     [self.sections addObject:section0];
+    
+    
 }
+
+
+
 
 
 
@@ -276,22 +290,23 @@
 }
 
 
+
+
 - (UIImage *)lmjNavigationBarLeftButtonImage:(UIButton *)leftButton navigationBar:(LMJNavigationBar *)navigationBar
 {
 //    [leftButton setTitle:@"左边" forState: UIControlStateNormal];
 //    [leftButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
 //    [leftButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     
-    
-    
+
     [leftButton addTarget:self action:@selector(BtnClick) forControlEvents:UIControlEventTouchUpInside];
-    
     
     UIImage *img=[UIImage imageNamed:@"nav_coin_icon"];
 
-    
     return img;
 }
+
+
 
 
 - (UIImage *)lmjNavigationBarRightButtonImage:(UIButton *)rightButton navigationBar:(LMJNavigationBar *)navigationBar
@@ -310,6 +325,12 @@
 
 
 
+
+
+
+
+
+
 #pragma mark 自定义代码
 
 -(NSMutableAttributedString *)changeTitle:(NSString *)curTitle
@@ -322,6 +343,13 @@
     
     return title;
 }
+
+
+
+
+
+
+
 
 
 -(void)BtnClick{

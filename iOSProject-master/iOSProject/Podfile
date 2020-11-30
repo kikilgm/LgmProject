@@ -87,9 +87,13 @@ pod 'ZJScrollPageView'
 pod 'ZFPlayer', '2.1.6'
 #pod 'ZFDownload'
 
+
 # mark- 好玩的
 # 泡泡uibutton
 pod 'DWBubbleMenuButton'
+
+#添加动画框架
+pod 'SVGAPlayer', '~> 2.3'
 
 
 #一个搜索框架

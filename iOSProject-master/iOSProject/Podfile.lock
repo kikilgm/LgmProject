@@ -32,6 +32,7 @@ PODS:
   - MJExtension (3.2.2)
   - MJRefresh (3.5.0)
   - MOFSPickerManager (2.2.4)
+  - Protobuf (3.13.0)
   - Reachability (3.2)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
@@ -41,6 +42,15 @@ PODS:
   - SDWebImage/GIF (4.4.8):
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
+  - SSZipArchive (2.2.3)
+  - SVGAPlayer (2.5.6):
+    - SVGAPlayer/Core (= 2.5.6)
+    - SVGAPlayer/ProtoFiles (= 2.5.6)
+  - SVGAPlayer/Core (2.5.6):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.5.6):
+    - Protobuf (~> 3.4)
   - Toast (4.0.0)
   - TZImagePickerController (3.4.2)
   - UICKeyChainStore (2.1.2)
@@ -94,6 +104,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - SDWebImage/GIF
+  - SVGAPlayer (~> 2.3)
   - Toast
   - TZImagePickerController
   - UMengAnalytics
@@ -140,6 +151,10 @@ SPEC REPOS:
     - YYText
     - ZFPlayer
     - ZJScrollPageView
+  trunk:
+    - Protobuf
+    - SSZipArchive
+    - SVGAPlayer
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
@@ -158,9 +173,12 @@ SPEC CHECKSUMS:
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   MOFSPickerManager: 24c0a437874696622f132c47a351b89df5030f19
+  Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  SVGAPlayer: f3b3792ae66f7cb3f944ae373a40864db9a04331
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
@@ -173,6 +191,6 @@ SPEC CHECKSUMS:
   ZFPlayer: 833cb3974b619bfd01a0ec1ebaabfe6f629e85b4
   ZJScrollPageView: dd8778909cb2413782616ab156e873956f6b0682
 
-PODFILE CHECKSUM: 72f18ef5ca9f0390648e72f08f54ed8a5fe04ab1
+PODFILE CHECKSUM: 132f18976ccd9ff622d064ae4a445720a2f536de
 
 COCOAPODS: 1.10.0

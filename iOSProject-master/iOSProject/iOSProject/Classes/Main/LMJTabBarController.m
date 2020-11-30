@@ -35,6 +35,11 @@
 }
 
 
+
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.indexFlag=0;
@@ -48,6 +53,9 @@
         return;
     }
 }
+
+
+
 
 
 - (void)addChildViewControllers
@@ -70,6 +78,9 @@
     self.viewControllers = @[one,two,three,four,five];
     
 }
+
+
+
 
 - (void)addTabarItems
 {
@@ -141,10 +152,15 @@
 
 
 
+
+
+
+
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     return YES;
 }
+
 
 
 
