@@ -365,6 +365,11 @@
 		FB82E5972552584900B8AF80 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB82E5952552584800B8AF80 /* YJSegmentedControl.m */; };
 		FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB96E4662553C14900F72CF9 /* LMCentreController.m */; };
 		FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */; };
+		FBC212EF2575E7470020AAED /* UITabBarItem+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC212E92575E7470020AAED /* UITabBarItem+TLAnimation.m */; };
+		FBC212F02575E7470020AAED /* UITabBar+TLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC212EA2575E7470020AAED /* UITabBar+TLAnimation.m */; };
+		FBC212F12575E7470020AAED /* TLTabBarAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC212EE2575E7470020AAED /* TLTabBarAnimation.m */; };
+		FBC212F62575EE090020AAED /* TLTabBarLottieAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC212F52575EE090020AAED /* TLTabBarLottieAnimation.m */; };
+		FBC212FC2575EE2A0020AAED /* TLLottieAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC212F92575EE2A0020AAED /* TLLottieAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1020,6 +1025,18 @@
 		FB96E4662553C14900F72CF9 /* LMCentreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCentreController.m; sourceTree = "<group>"; };
 		FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMBaseCommonTableViewCell.m; sourceTree = "<group>"; };
 		FB9C90CD25552E8000342EDD /* SIMBaseCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMBaseCommonTableViewCell.h; sourceTree = "<group>"; };
+		FBC212E72575E7470020AAED /* TLAnimationTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationTabBar.h; sourceTree = "<group>"; };
+		FBC212E82575E7470020AAED /* TLAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationProtocol.h; sourceTree = "<group>"; };
+		FBC212E92575E7470020AAED /* UITabBarItem+TLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+TLAnimation.m"; sourceTree = "<group>"; };
+		FBC212EA2575E7470020AAED /* UITabBar+TLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+TLAnimation.m"; sourceTree = "<group>"; };
+		FBC212EB2575E7470020AAED /* TLTabBarAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarAnimation.h; sourceTree = "<group>"; };
+		FBC212EC2575E7470020AAED /* UITabBarItem+TLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+TLAnimation.h"; sourceTree = "<group>"; };
+		FBC212ED2575E7470020AAED /* UITabBar+TLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+TLAnimation.h"; sourceTree = "<group>"; };
+		FBC212EE2575E7470020AAED /* TLTabBarAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBarAnimation.m; sourceTree = "<group>"; };
+		FBC212F42575EE090020AAED /* TLTabBarLottieAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarLottieAnimation.h; sourceTree = "<group>"; };
+		FBC212F52575EE090020AAED /* TLTabBarLottieAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBarLottieAnimation.m; sourceTree = "<group>"; };
+		FBC212F82575EE2A0020AAED /* TLLottieAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLottieAnimationView.h; sourceTree = "<group>"; };
+		FBC212F92575EE2A0020AAED /* TLLottieAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLottieAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1602,6 +1619,7 @@
 		5892AD611FF5088D00E868C2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FBC212E62575E7470020AAED /* TLAnimationTabBar */,
 				FB607A24256E673500F2840C /* PYSearch */,
 				5892AD9A1FF5F04700E868C2 /* 广告页 */,
 				5892AD8A1FF5E2C000E868C2 /* 欢迎页 */,
@@ -2352,6 +2370,25 @@
 			path = PYSearch;
 			sourceTree = "<group>";
 		};
+		FBC212E62575E7470020AAED /* TLAnimationTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FBC212F82575EE2A0020AAED /* TLLottieAnimationView.h */,
+				FBC212F92575EE2A0020AAED /* TLLottieAnimationView.m */,
+				FBC212F42575EE090020AAED /* TLTabBarLottieAnimation.h */,
+				FBC212F52575EE090020AAED /* TLTabBarLottieAnimation.m */,
+				FBC212E72575E7470020AAED /* TLAnimationTabBar.h */,
+				FBC212EB2575E7470020AAED /* TLTabBarAnimation.h */,
+				FBC212EE2575E7470020AAED /* TLTabBarAnimation.m */,
+				FBC212E82575E7470020AAED /* TLAnimationProtocol.h */,
+				FBC212EC2575E7470020AAED /* UITabBarItem+TLAnimation.h */,
+				FBC212E92575E7470020AAED /* UITabBarItem+TLAnimation.m */,
+				FBC212ED2575E7470020AAED /* UITabBar+TLAnimation.h */,
+				FBC212EA2575E7470020AAED /* UITabBar+TLAnimation.m */,
+			);
+			path = TLAnimationTabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2583,6 +2620,7 @@
 				588CCD82205DF7860067E3C4 /* LMJCuteFlowLayoutViewController.m in Sources */,
 				58651AAC1FFE6D6F0087419D /* SINStatusViewModel.m in Sources */,
 				589B56FB1FFFC52F00B2D5A8 /* MUSPlayingViewController.m in Sources */,
+				FBC212F02575E7470020AAED /* UITabBar+TLAnimation.m in Sources */,
 				589B56FF1FFFC52F00B2D5A8 /* QQLrcModel.m in Sources */,
 				58DC84FD1FFC972C0060DC03 /* BSJTabBarController.m in Sources */,
 				584038421FF7EC0E002A0566 /* LMJDownLoadFileViewController.m in Sources */,
@@ -2637,6 +2675,7 @@
 				584038721FF9399B002A0566 /* LMJListTimerCountDownViewController.m in Sources */,
 				5898889F206B34BF00BDAACD /* DES3Encryptor.m in Sources */,
 				5840385D1FF873A8002A0566 /* LMJAnnotationCustomPopView.m in Sources */,
+				FBC212EF2575E7470020AAED /* UITabBarItem+TLAnimation.m in Sources */,
 				58651AB41FFE6D6F0087419D /* SINUnLoginRegisterView.m in Sources */,
 				58651ABD1FFE6D6F0087419D /* SINStatusListService.m in Sources */,
 				FB607A34256E673500F2840C /* PYSearchViewController.m in Sources */,
@@ -2754,6 +2793,7 @@
 				58651AA41FFE6D6F0087419D /* SINProfileViewController.m in Sources */,
 				58651AA81FFE6D6F0087419D /* SINMessageViewController.m in Sources */,
 				FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */,
+				FBC212F12575E7470020AAED /* TLTabBarAnimation.m in Sources */,
 				58DC85041FFC972C0060DC03 /* BSJRecommendViewController.m in Sources */,
 				589B56FE1FFFC52F00B2D5A8 /* QQMusicModel.m in Sources */,
 				58DC81891FFA317B0060DC03 /* LMJExpandImageView.m in Sources */,
@@ -2761,6 +2801,7 @@
 				5892AD681FF508E600E868C2 /* UIView+LMJNjHuFrame.m in Sources */,
 				58DC85121FFC972C0060DC03 /* BSJTopicTopComent.m in Sources */,
 				58DC83881FFB43460060DC03 /* LMJCALayerYSDHViewController.m in Sources */,
+				FBC212F62575EE090020AAED /* TLTabBarLottieAnimation.m in Sources */,
 				58DC83C61FFB43E30060DC03 /* LMJDrawProgressViewController.m in Sources */,
 				58651AA61FFE6D6F0087419D /* SINPublishViewController.m in Sources */,
 				585FC1DC208DBD95003174A7 /* VIDDownLoadViewController.m in Sources */,
@@ -2822,6 +2863,7 @@
 				589B56FC1FFFC52F00B2D5A8 /* QQMusicMessageModel.m in Sources */,
 				5892AD901FF5E32500E868C2 /* LMJIntroductoryPagesHelper.m in Sources */,
 				58DC850D1FFC972C0060DC03 /* BSJComment.m in Sources */,
+				FBC212FC2575EE2A0020AAED /* TLLottieAnimationView.m in Sources */,
 				58651AAA1FFE6D6F0087419D /* SINBroswerCell.m in Sources */,
 				583D508420765948001480C8 /* TDTouchID.m in Sources */,
 				589B57001FFFC52F00B2D5A8 /* QQLrcCell.m in Sources */,

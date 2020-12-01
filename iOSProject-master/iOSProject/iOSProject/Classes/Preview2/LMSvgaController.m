@@ -12,8 +12,6 @@
 #import <SVGA.h>
 #import "SVGA.h"
 
-
-
 @interface LMSvgaController ()<SVGAPlayerDelegate>
 
 @property (nonatomic, strong) SVGAPlayer *player;
@@ -50,6 +48,8 @@
     } failureBlock:^(NSError*_Nonnullerror) {
         NSLog(@"%@",_Nonnullerror);
     }];
+
+    
 
     
     

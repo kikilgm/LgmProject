@@ -87,13 +87,20 @@ pod 'ZJScrollPageView'
 pod 'ZFPlayer', '2.1.6'
 #pod 'ZFDownload'
 
-
 # mark- 好玩的
 # 泡泡uibutton
 pod 'DWBubbleMenuButton'
 
 #添加动画框架
 pod 'SVGAPlayer', '~> 2.3'
+
+#另一个lottie动画框架 可以通过json 来渲染
+#3.0以上的版本的 都是swift版
+pod 'lottie-ios', '~> 2.5.3'
+
+
+
+
 
 
 #一个搜索框架

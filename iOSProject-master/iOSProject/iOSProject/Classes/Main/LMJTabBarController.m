@@ -15,6 +15,8 @@
 #import "LMJCasesViewController.h"
 #import "LgmNewHomeController.h"
 
+#import "TLAnimationTabBar.h"
+#import "TLTabBarLottieAnimation.h"
 
 
 
@@ -37,9 +39,6 @@
 
 
 
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.indexFlag=0;
@@ -48,12 +47,16 @@
     [self addTabarItems];
     self.delegate = self;
 }
+
+
+
+
+
 - (void)customIsInGod:(NSNotification *)noti {
     if (![noti.object boolValue]) {
         return;
     }
 }
-
 
 
 
@@ -129,7 +132,10 @@
         obj.tabBarItem.title = tabBarItemsAttributes[idx][@"TabBarItemTitle"];
         obj.tabBarItem.image = [[UIImage imageNamed:tabBarItemsAttributes[idx][@"TabBarItemImage"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         obj.tabBarItem.selectedImage = [[UIImage imageNamed:tabBarItemsAttributes[idx][@"TabBarItemSelectedImage"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+      
         
+
+
 
         //tab文字 和 图标的间距
         obj.tabBarItem.titlePositionAdjustment = UIOffsetMake(0,-2);
@@ -164,8 +170,9 @@
 
 
 
-
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    NSLog(@"%s",__func__);
+
     NSInteger index = [self.tabBar.items indexOfObject:item];
     if (index != self.indexFlag) {
         //执行动画
@@ -191,10 +198,9 @@
         [[arry[index] layer] addAnimation:animation forKey:nil];
         
         
-        
-        
-        
+        self.indexFlag = index;
 
+        
         
         
 //        //向上移动 效果
@@ -208,8 +214,6 @@
 //        animation.toValue = [NSNumber numberWithFloat:-8];     //结束伸缩倍数
 //        [[arry[index] layer] addAnimation:animation forKey:nil];
                 
-        
-        
         
         
         
@@ -233,8 +237,6 @@
         
         
         
-
-        
         
 //        //z轴旋转180度  太夸张
 //        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -248,12 +250,108 @@
 //        [[arry[index] layer] addAnimation:animation forKey:nil];
 //
         
-        
-        
-        self.indexFlag = index;
 
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark-基于系统封装的仅供参考
+//添加系统 动画库的封装 实现 帧动画效果
+
+//添加item的时候添加 这两句代码 就可以实现
+////绑定tga
+//obj.tabBarItem.tag=idx;
+////添加动画
+//setAnimation(obj.tabBarItem,idx);
+
+
+// MARK: - 给UITabBarItem绑定动画
+/// 给UITabBarItem绑定动画
+
+
+//void setAnimation(UITabBarItem *item, NSInteger index) {
+//    item.animation = @[
+//        bounceAnimation(), rotationAnimation(), transitionAniamtion(),
+//        fumeAnimation(), frameAnimation()
+//    ][index];
+//}
+
+
+
+// MARK: - 创建动画函数
+
+
+//下面是各种动画效果
+//TLBounceAnimation *bounceAnimation(){
+//    TLBounceAnimation *anm = [TLBounceAnimation new];
+//    anm.isPlayFireworksAnimation = YES;
+//    return anm;
+//}
+
+
+
+//TLRotationAnimation *rotationAnimation(){
+//    TLRotationAnimation *anm = [TLRotationAnimation new];
+//    return anm;
+//}
+
+
+//TLTransitionAniamtion *transitionAniamtion(){
+//    TLTransitionAniamtion *anm = [TLTransitionAniamtion new];
+//    anm.direction = 1; // 1~6
+//    anm.disableDeselectAnimation = NO;
+//    return anm;
+//}
+
+//TLFumeAnimation *fumeAnimation(){
+//    TLFumeAnimation *anm = [TLFumeAnimation new];
+//    return anm;
+//}
+
+
+//TLFrameAnimation *frameAnimation(){
+//    TLFrameAnimation *anm = [TLFrameAnimation new];
+//    anm.images = imgs();
+//    anm.isPlayFireworksAnimation = YES;
+//    return anm;
+//}
+
+
+
+#pragma mark-播放帧动画
+//NSArray *imgs (){
+//    NSMutableArray *temp = [NSMutableArray array];
+//    for (NSInteger i = 28 ; i <= 65; i++) {
+//        NSString *imgName = [NSString stringWithFormat:@"Tools_000%zi", i];
+//        CGImageRef img = [UIImage imageNamed:imgName].CGImage;
+//        [temp addObject:(__bridge id _Nonnull)(img)];
+//    }
+//    return temp;
+//}
+//
+//
+
+
+
+
 
 @end
