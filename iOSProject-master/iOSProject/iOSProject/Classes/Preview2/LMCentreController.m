@@ -31,12 +31,14 @@
 }
 
 
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initView];
 }
-
 
 
 
@@ -91,7 +93,7 @@
     SIMBaseCommonTableViewCell* meetingCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"课程设置"];
     SIMBaseCommonTableViewCell* imCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"消息通知"];
     SIMBaseCommonTableViewCell*shebeiCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"设备设置"];
-      SIMBaseCommonTableViewCell*HuoDongCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"活动"];
+    SIMBaseCommonTableViewCell*HuoDongCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"活动"];
     SIMBaseCommonTableViewCell*duanlianCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"锻炼项目"];
     SIMBaseCommonTableViewCell*yyCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"营养和身体"];
     SIMBaseCommonTableViewCell*sleepCell = [[SIMBaseCommonTableViewCell alloc] initWithTitle:@"睡眠"];
@@ -106,6 +108,8 @@
 
 
 
+
+
 #pragma mark - TableView
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -117,6 +121,9 @@
         return 44;
     }
 }
+
+
+
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section

@@ -334,6 +334,8 @@
 		58E02EEE209D8BA4005431BA /* LMJUniversalLink.html in Resources */ = {isa = PBXBuildFile; fileRef = 58E02EED209D8BA4005431BA /* LMJUniversalLink.html */; };
 		FB297E31255250EF006E297C /* LMSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB297E30255250EF006E297C /* LMSegmentViewController.m */; };
 		FB3CFB652554E8E60025C16C /* SIMAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */; };
+		FB49203E25831EC400046BA9 /* ListTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB49203D25831EC400046BA9 /* ListTimerController.m */; };
+		FB492042258321B400046BA9 /* ListTimerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB492041258321B400046BA9 /* ListTimerCell.m */; };
 		FB5D786A2574925E00089815 /* LMSvgaController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D78692574925E00089815 /* LMSvgaController.m */; };
 		FB5D79912574F74A00089815 /* mutiMatte.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79802574F74A00089815 /* mutiMatte.svga */; };
 		FB5D79922574F74A00089815 /* kingset.svga in Resources */ = {isa = PBXBuildFile; fileRef = FB5D79812574F74A00089815 /* kingset.svga */; };
@@ -978,6 +980,10 @@
 		FB297E30255250EF006E297C /* LMSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSegmentViewController.m; sourceTree = "<group>"; };
 		FB3CFB632554E8E60025C16C /* SIMAvatarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMAvatarTableViewCell.h; sourceTree = "<group>"; };
 		FB3CFB642554E8E60025C16C /* SIMAvatarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMAvatarTableViewCell.m; sourceTree = "<group>"; };
+		FB49203C25831EC400046BA9 /* ListTimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTimerController.h; sourceTree = "<group>"; };
+		FB49203D25831EC400046BA9 /* ListTimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTimerController.m; sourceTree = "<group>"; };
+		FB492040258321B400046BA9 /* ListTimerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTimerCell.h; sourceTree = "<group>"; };
+		FB492041258321B400046BA9 /* ListTimerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTimerCell.m; sourceTree = "<group>"; };
 		FB5D78682574925E00089815 /* LMSvgaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSvgaController.h; sourceTree = "<group>"; };
 		FB5D78692574925E00089815 /* LMSvgaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSvgaController.m; sourceTree = "<group>"; };
 		FB5D79802574F74A00089815 /* mutiMatte.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = mutiMatte.svga; sourceTree = "<group>"; };
@@ -1001,8 +1007,6 @@
 		FB60795E256E262700F2840C /* LMSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSearchController.m; sourceTree = "<group>"; };
 		FB607961256E2CF500F2840C /* PYTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTempViewController.m; sourceTree = "<group>"; };
 		FB607962256E2CF500F2840C /* PYTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTempViewController.h; sourceTree = "<group>"; };
-		FB607987256E655500F2840C /* PYSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
-		FB6079DD256E661B00F2840C /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
 		FB607A25256E673500F2840C /* NSBundle+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PYSearchExtension.h"; sourceTree = "<group>"; };
 		FB607A26256E673500F2840C /* UIColor+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PYSearchExtension.m"; sourceTree = "<group>"; };
 		FB607A27256E673500F2840C /* PYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchViewController.m; sourceTree = "<group>"; };
@@ -1251,10 +1255,10 @@
 				FB60795E256E262700F2840C /* LMSearchController.m */,
 				FB607962256E2CF500F2840C /* PYTempViewController.h */,
 				FB607961256E2CF500F2840C /* PYTempViewController.m */,
-				FB607987256E655500F2840C /* PYSearchViewController.h */,
-				FB6079DD256E661B00F2840C /* PYSearchViewController.h */,
 				FB5D78682574925E00089815 /* LMSvgaController.h */,
 				FB5D78692574925E00089815 /* LMSvgaController.m */,
+				FB49203C25831EC400046BA9 /* ListTimerController.h */,
+				FB49203D25831EC400046BA9 /* ListTimerController.m */,
 			);
 			path = Preview2;
 			sourceTree = "<group>";
@@ -1290,6 +1294,8 @@
 				584038671FF88594002A0566 /* LMJUpLoadImageCell.xib */,
 				584038771FF93AA5002A0566 /* LMJCountDownCell.h */,
 				584038761FF93AA5002A0566 /* LMJCountDownCell.m */,
+				FB492040258321B400046BA9 /* ListTimerCell.h */,
+				FB492041258321B400046BA9 /* ListTimerCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -2669,6 +2675,7 @@
 				5892AD8D1FF5E2D700E868C2 /* LMJIntroductoryPagesView.m in Sources */,
 				5892AD071FF4F9D200E868C2 /* LMJAutoRefreshFooter.m in Sources */,
 				58223317201821C00008251F /* NullSafe.m in Sources */,
+				FB49203E25831EC400046BA9 /* ListTimerController.m in Sources */,
 				58DC84EE1FFC972B0060DC03 /* BSJ.m in Sources */,
 				581A3E4120450B3E00AF08C0 /* NSString+MJDownload.m in Sources */,
 				58926429201B64D3007DA41E /* BSJTopicListDAL.m in Sources */,
@@ -2697,6 +2704,7 @@
 				5892ADAF1FF60A8300E868C2 /* JXTAlertController.m in Sources */,
 				5892AD051FF4F9D200E868C2 /* LMJHorizontalFlowLayout.m in Sources */,
 				58DC846B1FFC94B30060DC03 /* LMJTeam.m in Sources */,
+				FB492042258321B400046BA9 /* ListTimerCell.m in Sources */,
 				58DC846F1FFC967E0060DC03 /* LMJBaseRequest.m in Sources */,
 				588CCD8A205DF92F0067E3C4 /* LMJGirdLayout.m in Sources */,
 				58DC83CC1FFB43E30060DC03 /* LMJJuZhenCaoZuoViewController.m in Sources */,

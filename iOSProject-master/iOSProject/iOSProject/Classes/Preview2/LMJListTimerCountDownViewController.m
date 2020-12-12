@@ -25,6 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+
+    
+    
+    
     [self.tableView registerClass:[LMJCountDownCell class] forCellReuseIdentifier:NSStringFromClass([LMJCountDownCell class])];
     
     [self products];
@@ -32,10 +37,18 @@
     [self startTimer];
 }
 
+
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.products.count;
 }
+
+
+
+
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

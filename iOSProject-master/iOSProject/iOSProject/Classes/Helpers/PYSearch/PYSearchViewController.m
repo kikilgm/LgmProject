@@ -7,8 +7,8 @@
 #import "PYSearchViewController.h"
 #import "PYSearchConst.h"
 #import "PYSearchSuggestionViewController.h"
-
 #import <objc/runtime.h>
+
 
 
 #define PYRectangleTagMaxCol 3
@@ -1116,6 +1116,9 @@
     PYSEARCH_LOG(@"Search %@", label.text);
 }
 
+
+
+
 - (UILabel *)labelWithTitle:(NSString *)title
 {
     UILabel *label = [[UILabel alloc] init];
@@ -1132,6 +1135,8 @@
     label.py_height += 14;
     return label;
 }
+
+
 
 - (void)saveSearchCacheAndRefreshView
 {
@@ -1207,6 +1212,9 @@
     return self.searchSuggestions.count;
 }
 
+
+
+
 - (UITableViewCell *)searchSuggestionView:(UITableView *)searchSuggestionView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([self.dataSource respondsToSelector:@selector(searchSuggestionView:cellForRowAtIndexPath:)]) {
@@ -1215,6 +1223,10 @@
     return nil;
 }
 
+
+
+
+
 - (CGFloat)searchSuggestionView:(UITableView *)searchSuggestionView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([self.dataSource respondsToSelector:@selector(searchSuggestionView:heightForRowAtIndexPath:)]) {
@@ -1222,6 +1234,7 @@
     }
     return 44.0;
 }
+
 
 
 
@@ -1239,6 +1252,11 @@
     if (self.didSearchBlock) self.didSearchBlock(self, searchBar, searchBar.text);
     [self saveSearchCacheAndRefreshView];
 }
+
+
+
+
+
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
@@ -1259,6 +1277,9 @@
     }
 }
 
+
+
+
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
 {
     if (PYSearchResultShowModeEmbed == self.searchResultShowMode) {
@@ -1273,6 +1294,12 @@
     return YES;
 }
 
+
+
+
+
+
+
 - (void)closeDidClick:(UIButton *)sender
 {
     UITableViewCell *cell = (UITableViewCell *)sender.superview;
@@ -1280,6 +1307,11 @@
     [NSKeyedArchiver archiveRootObject:self.searchHistories toFile:self.searchHistoriesCachePath];
     [self.baseSearchTableView reloadData];
 }
+
+
+
+
+
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -1325,6 +1357,9 @@
     return cell;
 }
 
+
+
+
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     return self.showSearchHistory && self.searchHistories.count && PYSearchHistoryStyleCell == self.searchHistoryStyle ? (self.searchHistoryTitle.length ? self.searchHistoryTitle : [NSBundle py_localizedStringForKey:PYSearchSearchHistoryText]) : nil;
@@ -1339,6 +1374,9 @@
 {
     return 0.01;
 }
+
+
+
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -1355,6 +1393,9 @@
     }
 }
 
+
+
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     if (self.keyboardShowing) {
@@ -1363,6 +1404,9 @@
         [self.searchBar resignFirstResponder];
     }
 }
+
+
+
 
 #pragma mark - UIGestureRecognizerDelegate
 
@@ -1375,6 +1419,7 @@
 {
     return self.navigationController.viewControllers.count > 1;
 }
+
 
 
 

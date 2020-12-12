@@ -61,6 +61,8 @@
 
 
 
+
+
 - (void)addChildViewControllers
 {
     
@@ -81,6 +83,8 @@
     self.viewControllers = @[one,two,three,four,five];
     
 }
+
+
 
 
 
@@ -134,8 +138,7 @@
         obj.tabBarItem.selectedImage = [[UIImage imageNamed:tabBarItemsAttributes[idx][@"TabBarItemSelectedImage"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
       
         
-
-
+        
 
         //tab文字 和 图标的间距
         obj.tabBarItem.titlePositionAdjustment = UIOffsetMake(0,-2);
@@ -155,9 +158,6 @@
     
 
 }
-
-
-
 
 
 
@@ -183,6 +183,8 @@
             }
         }
 
+        
+        
         //添加动画
         //放大效果，并回到原位
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];

@@ -43,6 +43,7 @@
 #import "LMCentreController.h"
 #import "LMSearchController.h"
 #import "LMSvgaController.h"
+#import "ListTimerController.h"
 
 
 @interface LMJNewViewController ()
@@ -209,36 +210,32 @@
     
     
     LMJWordArrowItem *item41 = [LMJWordArrowItem itemWithTitle:@"通用链接跳转" subTitle: @"浏览器,短信,邮件,其它App,都可以跳转本 App"];
-    
     item41.destVc = [LMJUniversalLinkViewController class];
     
     
     
     LMJWordArrowItem *item42 = [LMJWordArrowItem itemWithTitle:@"分段选择" subTitle: @"列表顶部的分段筛选数据"];
-    
     item42.destVc = [LMSegmentViewController class];
     
     
-    
     LMJWordArrowItem *item43 = [LMJWordArrowItem itemWithTitle:@"我的中心" subTitle: @"个人中心常见的列表样式"];
-    
     item43.destVc = [LMCentreController class];
     
     
-    
     LMJWordArrowItem *item44 = [LMJWordArrowItem itemWithTitle:@"搜索列表" subTitle: @"各种搜索样式"];
-    
     item44.destVc = [LMSearchController class];
     
-
     
     LMJWordArrowItem *item45 = [LMJWordArrowItem itemWithTitle:@"SVGA动画" subTitle: @"直播礼物打赏特效"];
     item45.destVc = [LMSvgaController class];
     
     
+    LMJWordArrowItem *item46 = [LMJWordArrowItem itemWithTitle:@"商品秒杀" subTitle: @"商品秒杀列表倒计时"];
+    item46.destVc = [ListTimerController class];
+    
     
     LMJItemSection *section0;
-    section0 = [LMJItemSection sectionWithItems:@[item45,item44,item43,item42,item40, item41, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item101, item11, item12, item121,item13, item29, item30, item15, item16, item17, item18, item19, item20, item201, item21, item22, item24, item25, item26, item27, item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
+    section0 = [LMJItemSection sectionWithItems:@[item46,item45,item44,item43,item42,item40, item41, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item101, item11, item12, item121,item13, item29, item30, item15, item16, item17, item18, item19, item20, item201, item21, item22, item24, item25, item26, item27, item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
     
     
     
