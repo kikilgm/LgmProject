@@ -98,7 +98,12 @@
     
     // 2. Create a search view controller
     PYSearchViewController *searchViewController = [PYSearchViewController searchViewControllerWithHotSearches:hotSeaches searchBarPlaceholder:NSLocalizedString(@"PYExampleSearchPlaceholderText", @"搜索编程语言") didSearchBlock:^(PYSearchViewController *searchViewController, UISearchBar *searchBar, NSString *searchText) {
-        [self.navigationController pushViewController:[[PYTempViewController alloc] init] animated:YES];
+//        [self.navigationController pushViewController:[[PYTempViewController alloc] init] animated:YES];
+        
+        
+        NSLog(@"搜索搜索");
+        
+        
     }];
    
       //搜索历史的个数

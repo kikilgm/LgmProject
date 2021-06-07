@@ -364,6 +364,7 @@
 		FB607A38256E673500F2840C /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A2C256E673500F2840C /* NSBundle+PYSearchExtension.m */; };
 		FB607A39256E673500F2840C /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607A32256E673500F2840C /* UIView+PYSearchExtension.m */; };
 		FB65D0712570C60400F40EAF /* LgmNewHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB65D0702570C60400F40EAF /* LgmNewHomeController.m */; };
+		FB7EFAE6262FF32D00A35A6E /* LMAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7EFAE5262FF32D00A35A6E /* LMAlertController.m */; };
 		FB82E5972552584900B8AF80 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB82E5952552584800B8AF80 /* YJSegmentedControl.m */; };
 		FB96E4672553C14900F72CF9 /* LMCentreController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB96E4662553C14900F72CF9 /* LMCentreController.m */; };
 		FB9C90CE25552E8000342EDD /* SIMBaseCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C90CC25552E8000342EDD /* SIMBaseCommonTableViewCell.m */; };
@@ -1023,6 +1024,8 @@
 		FB607A32256E673500F2840C /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
 		FB65D06F2570C60400F40EAF /* LgmNewHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LgmNewHomeController.h; sourceTree = "<group>"; };
 		FB65D0702570C60400F40EAF /* LgmNewHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LgmNewHomeController.m; sourceTree = "<group>"; };
+		FB7EFAE4262FF32D00A35A6E /* LMAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAlertController.h; sourceTree = "<group>"; };
+		FB7EFAE5262FF32D00A35A6E /* LMAlertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAlertController.m; sourceTree = "<group>"; };
 		FB82E5952552584800B8AF80 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
 		FB82E5962552584900B8AF80 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
 		FB96E4652553C14900F72CF9 /* LMCentreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCentreController.h; sourceTree = "<group>"; };
@@ -1259,6 +1262,8 @@
 				FB5D78692574925E00089815 /* LMSvgaController.m */,
 				FB49203C25831EC400046BA9 /* ListTimerController.h */,
 				FB49203D25831EC400046BA9 /* ListTimerController.m */,
+				FB7EFAE4262FF32D00A35A6E /* LMAlertController.h */,
+				FB7EFAE5262FF32D00A35A6E /* LMAlertController.m */,
 			);
 			path = Preview2;
 			sourceTree = "<group>";
@@ -2905,6 +2910,7 @@
 				5892AD9F1FF5F23D00E868C2 /* AdvertiseView.m in Sources */,
 				589B57091FFFC53000B2D5A8 /* QQImageTool.m in Sources */,
 				5840381C1FF644D2002A0566 /* LMJAnimationNavBarViewController.m in Sources */,
+				FB7EFAE6262FF32D00A35A6E /* LMAlertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3035,7 +3041,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 82RSGM6B7V;
+				DEVELOPMENT_TEAM = Q74Y44T574;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = iOSProject/LMJiOSProject.pch;
 				INFOPLIST_FILE = iOSProject/Info.plist;
@@ -3143,7 +3149,7 @@
 					"-framework",
 					"\"WebKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = github.com.lgm.iosproject;
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.lgm.iosproject111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -3164,7 +3170,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 82RSGM6B7V;
+				DEVELOPMENT_TEAM = Q74Y44T574;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = iOSProject/LMJiOSProject.pch;
 				INFOPLIST_FILE = iOSProject/Info.plist;
@@ -3272,7 +3278,7 @@
 					"-framework",
 					"\"WebKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = github.com.lgm.iosproject;
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.lgm.iosproject111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;

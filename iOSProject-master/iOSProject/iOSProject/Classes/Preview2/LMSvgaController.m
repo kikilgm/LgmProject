@@ -23,8 +23,8 @@
     [super viewDidLoad];
     self.navigationItem.title=@"SVGA动画";
     // Do any additional setup after loading the view.
-
     SVGAPlayer *player = [[SVGAPlayer alloc] init];
+    
     //循环播放几次
     player.loops=5;
 
@@ -36,6 +36,12 @@
     }];
     
 
+    
+    
+    
+    
+    
+    
     SVGAParser *parser = [[SVGAParser alloc] init];
     [parser parseWithNamed:@"posche" inBundle:[NSBundle mainBundle] completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
         
@@ -50,8 +56,10 @@
     }];
 
     
-
     
+    
+    
+
     
 //[parser parseWithURL:[NSURL URLWithString:@"https://github.com/yyued/SVGA-Samples/blob/master/posche.svga?raw=true"] completionBlock:^(SVGAVideoEntity * _Nullable videoItem) {
 //            if (videoItem != nil) {

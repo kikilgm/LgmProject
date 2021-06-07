@@ -498,6 +498,12 @@
 //    }
 //    self.searchBar = searchBar;
     
+    
+    
+    //修改搜索历史和 关键词的顺序
+    
+    
+    
     UIView *headerView = [[UIView alloc] init];
     headerView.py_width = PYScreenW;
     headerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -1512,25 +1518,29 @@
 
 
 // 添加导航栏右侧按钮
-//- (UIView *)lmjNavigationBarRightView:(LMJNavigationBar *)navigationBar{
-//
-//    UIView *rightView=[[UIView alloc]initWithFrame:CGRectMake(0,0,50,40)];
-//    //添加搜索按钮
-//    UIButton *searBtn=[[UIButton alloc]init];
-//    [searBtn setTitleEdgeInsets:UIEdgeInsetsMake(0,0,0,0)];
-////    searBtn.backgroundColor=[UIColor orangeColor];
-//    searBtn.titleLabel.textAlignment=NSTextAlignmentLeft;
-//    [searBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-//    [searBtn setTitle:@"搜索" forState:UIControlStateNormal];
-//    [searBtn addTarget:self action:@selector(searchActiond) forControlEvents:UIControlEventTouchUpInside];
-//    [searchBar setValue:cancelButton forKeyPath:@"_cancelButton"];
-//   或者
+- (UIView *)lmjNavigationBarRightView:(LMJNavigationBar *)navigationBar{
+
+    UIView *rightView=[[UIView alloc]initWithFrame:CGRectMake(0,0,50,40)];
+    [rightView setBackgroundColor:[UIColor grayColor]];
+    //添加搜索按钮
+    UIButton *searBtn=[[UIButton alloc]init];
+    searBtn.frame=CGRectMake(0,0,50,40);
+    
+    [rightView addSubview:searBtn];
+    [searBtn setTitleEdgeInsets:UIEdgeInsetsMake(0,0,0,0)];
+//    searBtn.backgroundColor=[UIColor orangeColor];
+    searBtn.titleLabel.textAlignment=NSTextAlignmentLeft;
+    [searBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [searBtn setTitle:@"搜索" forState:UIControlStateNormal];
+    [searBtn addTarget:self action:@selector(searchActiond) forControlEvents:UIControlEventTouchUpInside];
+//    [_searchBar setValue:searBtn forKeyPath:@"cancelButton"];
+ //  或者
 //   [searchBar setValue:cancelButton forKeyPath:@"cancelButton"];
-//
-//
-//    return rightView;
-//
-//}
+
+
+    return rightView;
+
+}
 
 
 

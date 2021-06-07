@@ -30,15 +30,14 @@
 
 
 
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+-(void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 }
 
 
 
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -47,6 +46,8 @@
     }
     return self;
 }
+
+
 
 
 
@@ -80,10 +81,6 @@
     [titleLb setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
 
     self.titleLb1=titleLb;
-    
-    
-    
-    
     
     
     

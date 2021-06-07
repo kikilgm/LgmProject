@@ -55,6 +55,7 @@ NSString *const LMJThirdSDKMagicWindow = @"75Z6Q063T395YQ85QN27FDR7RAVIEKR7";
 //百度地图
 NSString *const LMJThirdSDKBaiduMapKey = @"K4FQLr0hX8zGxsYdGVuFTAmpMNRCVLBF";
 
+
 // 科大讯飞
 NSString *const  USER_APPID = @"56ce54a5";
 
