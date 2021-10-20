@@ -4,7 +4,7 @@
 //
 //  Created by lgm on 2020/11/27.
 //  Copyright © 2020 github.com/njhu. All rights reserved.
-//
+//这个是个首页
 
 #import "LgmNewHomeController.h"
 #import "SDCycleScrollView.h"
