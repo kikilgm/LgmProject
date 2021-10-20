@@ -407,7 +407,10 @@
 }
 
 - (void)deviceOrientationDidChange:(NSNotification *)notification {
-    UIDeviceOrientation deviceOrientation = [notification.object orientation];
+    
+  CGImagePropertyOrientation *Orientation=[(UIDevice *)notification.object orientation];
+      
+    UIDeviceOrientation deviceOrientation =Orientation ;
     
     if (_shouldAutorotate && UIDeviceOrientationIsValidInterfaceOrientation(deviceOrientation)) {
         if (UIDeviceOrientationIsPortrait(deviceOrientation)) {
